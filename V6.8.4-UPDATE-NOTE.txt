@@ -1,0 +1,7 @@
+Hall's Driving v6.8.4 Logo Update
+
+- Replaced the Hall's Driving logo everywhere it appears with the approved 3D version.
+- The white 3D HALL'S lettering is preserved and stands out clearly.
+- Updated the home-page hero logo, page-header logos, and printable permission-slip logo.
+- No wording, layout, schedule, class detail, or page-order changes were made.
+- index.html remains the home page and opens first when deployed.

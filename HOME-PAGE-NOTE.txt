@@ -1,0 +1,3 @@
+The website home page is index.html.
+The first featured image is the original Hall's Driving instructor waving from the car.
+No visual design or page content was changed in this update.

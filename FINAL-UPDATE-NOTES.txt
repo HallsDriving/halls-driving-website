@@ -1,0 +1,10 @@
+Hall's Driving Final Owner Approval Update
+
+Changes in this ZIP:
+- Brightened the HALL'S lettering in the existing logo to true white.
+- Confirmed and preserved all five original student photos in Student Success > Photos.
+- Removed the extra "Showing upcoming available class dates for 2026" notice.
+- Kept the black class-time boxes and automatic hiding of expired calendar months.
+- No redesign or other layout changes were made.
+
+To review: unzip the folder and open Halls-Driving-Final-Private-Preview/index.html.

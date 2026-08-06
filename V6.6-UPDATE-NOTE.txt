@@ -1,0 +1,6 @@
+Hall's Driving v6.6 updates:
+- Replaced the logo with the brighter high-contrast version so HALL'S remains clearly white and visible.
+- Increased font sizes across the website for improved readability.
+- Preserved the Home page as index.html so it opens first when the site goes live.
+- Preserved editable photo, calendar, announcement, and selected text areas.
+- Preserved compact print sizing for the one-page permission form.

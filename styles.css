@@ -1,0 +1,185 @@
+
+:root{--black:#080808;--red:#b51622;--gold:#e0ad21;--white:#fff;--cream:#fff8dc;--light:#f6f6f6;--ink:#171717}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white;line-height:1.55}
+img{max-width:100%;display:block}.wrap{width:min(1180px,92%);margin:auto}
+header{background:var(--black);color:white;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:30}
+.nav{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{text-decoration:none;color:white;line-height:1;display:flex;align-items:center;flex:0 0 auto}
+.brand img{width:150px;height:138px;object-fit:contain;display:block;margin:-20px 0 -22px}
+nav{display:flex;gap:24px;align-items:center;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:800;font-size:.85rem;padding:36px 0 10px;border-bottom:3px solid transparent}
+nav a:hover,nav a.active{border-color:var(--red)}
+.hero{background:var(--black);display:grid;grid-template-columns:.9fr 1.1fr;min-height:610px}.hero-copy{color:white;padding:80px max(5vw,calc((100vw - 1180px)/2));padding-right:35px;display:flex;flex-direction:column;justify-content:center}
+.hero-copy h1{font-size:clamp(2.7rem,5vw,4.9rem);line-height:.98;margin:0 0 22px;text-transform:uppercase}.gold{color:var(--gold)}
+.hero-photo{display:flex;align-items:center;justify-content:center;background:#111;padding:18px}.hero-photo img{width:100%;height:560px;object-fit:contain;background:#111}
+.btn{display:inline-block;background:var(--red);color:white;text-decoration:none;padding:14px 23px;border-radius:6px;text-transform:uppercase;font-weight:800;border:0}
+.section{padding:70px 0}.dark{background:var(--black);color:white}.title{text-align:center;text-transform:uppercase;font-size:2.4rem;margin:0 0 38px;color:var(--red)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:#171717;border:1px solid #444;border-radius:8px;padding:28px 20px;text-align:center}
+.service .icon{font-size:2.5rem;color:var(--gold);margin-bottom:15px}.service h3{color:white}.service p{color:#ddd;font-size:.94rem}
+.home-about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.home-about img{border-radius:8px}.home-about h2{font-size:2.35rem;color:var(--red);text-transform:uppercase}
+.page-head{background:var(--black);color:white;padding:62px 0;border-bottom:3px solid var(--red)}.page-head h1{color:var(--red);font-size:3rem;text-transform:uppercase;margin:0}
+.story{max-width:980px;margin:auto;text-align:center}.story h2{color:var(--gold);font-size:2.5rem}.story p{font-size:1.08rem}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}.fact{background:#171717;border:1px solid #3b3b3b;color:white;text-align:center;padding:23px}.fact strong{display:block;color:var(--gold);font-size:1.3rem}
+.staff-grid{display:grid;grid-template-columns:repeat(2,minmax(0,430px));justify-content:center;gap:34px}.staff-card{background:linear-gradient(145deg,#262626,#0c0c0c);border:2px solid var(--gold);border-radius:14px;padding:18px}
+.staff-photo{background:radial-gradient(circle at center,#5d5d5d 0,#1b1b1b 72%);border-radius:10px;padding:18px}.staff-photo img{width:100%;height:390px;object-fit:contain;border:2px solid white;border-radius:7px}
+.staff-card h3{text-align:center;color:white;margin:18px 0 5px}.staff-card p{text-align:center;color:var(--gold);margin:0}
+.area-box{margin-top:34px;background:var(--cream);border:2px solid var(--gold);padding:25px;border-radius:9px;text-align:center;color:#111}.area-box h3{color:var(--red);margin-top:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.gallery figure{margin:0;border:1px solid #ddd;border-radius:9px;overflow:hidden;background:#f0f0f0}.gallery img{width:100%;height:430px;object-fit:contain}.gallery figcaption{background:var(--black);color:var(--gold);text-align:center;font-weight:800;padding:12px}
+.permission-note{margin-top:30px;background:var(--cream);border:2px solid var(--gold);padding:22px;border-radius:8px;text-align:center}
+.schedule-note{background:var(--cream);border:2px solid var(--gold);padding:23px;border-radius:8px}.class-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px}
+.class-card{background:var(--black);color:white;padding:25px;border-radius:8px}.class-card h2{color:var(--gold)}
+.calendar-layout{display:grid;grid-template-columns:1.55fr .45fr;gap:28px;margin-top:28px}.calendar-months{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.month-panel{border:1px solid #ddd;border-radius:8px;overflow:hidden;background:white}.month-panel .panel-head{text-align:center;background:#222}.calendar-panel>.panel-body{padding:22px}.panel{border:1px solid #ddd;border-radius:8px;overflow:hidden}.panel-head{background:var(--black);color:white;padding:15px 20px;font-weight:800}.panel-body{padding:22px}
+.calendar{display:grid;grid-template-columns:repeat(7,1fr);border-left:1px solid #ddd;border-top:1px solid #ddd}.calendar div{min-height:67px;padding:8px;border-right:1px solid #ddd;border-bottom:1px solid #ddd}.calendar small{font-size:.72rem;line-height:1.15}.calendar .empty{background:#fafafa}.calendar .day{min-height:auto;background:#f4f4f4;color:var(--red);font-weight:800;text-align:center}.available{background:#fff1b8;font-weight:800}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field label{display:block;font-weight:800;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #bbb;border-radius:5px}.full{grid-column:1/-1}
+.parents-card{background:var(--cream);border:2px solid var(--gold);border-radius:10px;padding:30px;margin-bottom:28px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.footer{background:var(--black);color:white;border-top:3px solid var(--red);padding:42px 0 0}.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.footer h3{color:var(--gold);text-transform:uppercase}.copyright{background:var(--red);margin-top:34px;padding:11px;text-align:center}
+@media(max-width:850px){header{position:static}.nav{flex-direction:column;padding:18px 0}.brand img{width:138px;height:126px;margin:-12px 0 -16px}nav{justify-content:center;gap:14px}nav a{padding:7px}.hero{grid-template-columns:1fr}.hero-copy{padding:60px 6%}.hero-photo img{height:auto}.services,.facts{grid-template-columns:1fr 1fr}.home-about,.calendar-layout,.contact-grid{grid-template-columns:1fr}.calendar-months{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.services,.facts,.class-cards,.form-grid,.footer-grid,.staff-grid{grid-template-columns:1fr}}
+
+.map{width:100%;height:120px;border:0;border-radius:6px;margin-top:10px}
+.facebook{color:white;text-decoration:none;font-weight:700}
+.facebook:hover{color:var(--gold)}
+
+
+
+
+/* Complete review updates */
+.wrap.nav{width:100%;padding-left:14px;padding-right:clamp(18px,4vw,56px)}
+.nav{justify-content:space-between;min-height:96px}
+.brand img{width:148px;height:132px;margin:-18px 0 -20px;object-fit:contain}
+nav{margin-left:auto}
+.footer-tagline{display:block;color:var(--gold);font-weight:700;margin-top:3px}
+.core-values{grid-template-columns:repeat(5,1fr)}
+.brand-promise p{font-size:1.2rem;font-weight:800;margin-bottom:0}
+.success-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:34px;border-bottom:2px solid #ddd}
+.tab-button{border:0;background:#ededed;color:#222;padding:13px 24px;font-weight:800;font-size:1rem;cursor:pointer;border-radius:7px 7px 0 0}
+.tab-button.active{background:var(--red);color:white}
+.tab-panel[hidden]{display:none}.tab-panel.active{display:block}
+.success-intro{max-width:900px;margin:0 auto 35px;text-align:center;font-size:1.1rem}
+.success-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.success-highlight{background:var(--black);color:white;border:2px solid var(--gold);border-radius:9px;padding:25px;text-align:center}
+.success-highlight h3{color:var(--gold)}
+.calendar-auto-note{margin:0 0 20px;background:#fff8dc;border-left:5px solid var(--gold);padding:12px 14px;font-weight:700}
+.calendar-empty-message{grid-column:1/-1;background:var(--cream);border:2px solid var(--gold);padding:24px;text-align:center;font-weight:800}
+.month-panel[hidden]{display:none}
+@media(max-width:1050px){.core-values{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.wrap.nav{padding:14px 4%}.nav{flex-direction:column}.brand img{width:138px;height:122px;margin:-10px 0 -14px}nav{margin-left:0;justify-content:center}.success-highlights{grid-template-columns:1fr}}
+@media(max-width:520px){.core-values{grid-template-columns:1fr}.success-tabs{align-items:stretch}.tab-button{flex:1;padding:12px 10px}}
+
+.student-photos-title{margin-top:55px}
+
+/* Home-page logo layout: large logo in the hero only */
+.home-page header .brand{display:none}
+.home-page .nav{justify-content:flex-end;min-height:88px}
+.home-page nav{margin-left:0}
+.home-hero-logo{display:block;width:min(360px,85%);margin:0 0 34px;text-decoration:none}
+.home-hero-logo img{width:100%;height:auto;object-fit:contain}
+.home-page .hero-copy{padding-top:42px;padding-bottom:56px}
+@media(max-width:850px){
+  .home-page .nav{min-height:auto;justify-content:center}
+  .home-hero-logo{width:min(300px,78vw);margin:0 auto 32px}
+  .home-page .hero-copy{text-align:center;padding-top:38px}
+}
+
+.site-announcement{background:var(--gold);color:#111;text-align:center;padding:14px 0;font-weight:800}.site-announcement p{margin:0}.site-announcement[hidden]{display:none}
+
+/* Print branding: show the Hall's Driving logo on every printable page. */
+.print-only-logo{display:none}
+@media print{
+  .print-only-logo{display:block!important;text-align:center;margin:0 0 12pt}
+  .print-only-logo img{display:inline-block;width:1.45in;max-height:.95in;object-fit:contain}
+}
+
+/* Larger online defensive-driving coming-soon notice */
+.online-course-notice .panel-head {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+.online-course-notice .panel-body p {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .online-course-notice .panel-head {
+    font-size: 1.25rem;
+  }
+  .online-course-notice .panel-body p {
+    font-size: 1.08rem;
+  }
+}
+
+/* V6.2: Increase text size throughout the website without changing print sizing. */
+@media screen {
+  html { font-size: 112.5%; }
+  input, select, textarea, button { font: inherit; }
+}
+@media screen and (max-width: 520px) {
+  html { font-size: 106.25%; }
+}
+
+/* V6.6: New high-contrast logo and accessibility font-size increase. */
+@media screen {
+  html { font-size: 125%; }
+  body { line-height: 1.68; }
+  nav a,
+  .btn,
+  .service p,
+  .story p,
+  .success-intro,
+  .brand-promise p,
+  .permission-note,
+  .schedule-note,
+  .area-box,
+  .parents-card,
+  .panel-body,
+  .footer p,
+  .footer a,
+  .footer-tagline,
+  .copyright,
+  .field label,
+  .field input,
+  .field select,
+  .field textarea,
+  .calendar small,
+  .class-card p,
+  .contact-grid p,
+  .gallery figcaption,
+  .site-announcement p {
+    font-size: 1rem;
+  }
+  nav a { font-size: 1rem; }
+  .btn { padding: 16px 28px; }
+  .panel-head { font-size: 1.08rem; }
+  .field input,
+  .field select,
+  .field textarea { padding: 14px; }
+}
+@media screen and (max-width: 900px) {
+  html { font-size: 118.75%; }
+}
+@media screen and (max-width: 520px) {
+  html { font-size: 112.5%; }
+}
+
+/* V6.8 final: keep the desktop navigation on one line while preserving larger site text. */
+@media screen and (min-width: 851px) {
+  nav { flex-wrap: nowrap; gap: 16px; }
+  nav a { font-size: 0.78rem !important; white-space: nowrap; }
+}
+.defensive-hours-title { margin-top: 18px; }
+
+/* V7.0 launch-content and form updates */
+.home-welcome{background:#fff8dc;border-top:4px solid var(--gold);border-bottom:1px solid #eadba8}
+.home-welcome h2{color:var(--red);text-transform:uppercase;font-size:2.45rem;margin-bottom:18px}
+.home-welcome .welcome-closing{font-weight:800;color:#111;font-size:1.12rem}
+.about-journey{margin:45px auto 25px;padding:30px;background:#151515;border:2px solid var(--gold);border-radius:10px}
+.about-journey h2{color:var(--gold);text-transform:uppercase}
+.about-journey .journey-closing{color:var(--gold);font-weight:800;font-size:1.25rem;margin-bottom:0}
+.form-confirmation{text-align:center;padding:25px 10px}
+.form-confirmation img{width:180px;max-height:150px;object-fit:contain;margin:0 auto 18px}
+.form-confirmation h2{color:var(--red);text-transform:uppercase}
+.hidden-field{position:absolute;left:-9999px}
+.footer-thank-you{text-align:center;border-top:1px solid #333;padding:26px 5%;color:#fff}
+.footer-thank-you p{margin:0 0 5px;font-size:1.05rem}
+.footer-thank-you strong{color:var(--gold)}
+button:disabled{opacity:.7;cursor:wait}

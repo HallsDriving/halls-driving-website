@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Website Photo Permission Slip | Hall's Driving</title>
+<link href="styles.css" rel="stylesheet"/>
+<style>
+.permission-form{max-width:900px;margin:auto;background:white;border:2px solid var(--gold);border-radius:10px;padding:32px}
+.permission-form h2{color:var(--red);margin-top:0}.permission-logo{display:block;width:150px;max-width:35%;height:auto;margin:0 auto 14px}
+.permission-form .line{border-bottom:1px solid #888;min-height:32px;margin:8px 0 20px}
+.permission-form .choice{margin:14px 0;font-size:1.05rem}
+.permission-form .notice{background:var(--cream);border-left:5px solid var(--gold);padding:16px;margin:22px 0}
+.print-btn{margin-right:10px}
+@page{size:Letter portrait;margin:.35in}
+@media print{
+  header,.footer,.page-head,.print-btn,.back-btn{display:none!important}
+  html,body{background:white!important;margin:0!important;padding:0!important;font-size:10.5pt;line-height:1.25}
+  .section{padding:0!important}
+  .wrap{width:100%!important;max-width:none!important;margin:0!important}
+  .permission-form{border:0!important;border-radius:0!important;max-width:none!important;margin:0!important;padding:0!important}
+  .permission-form h2{font-size:17pt;margin:0 0 6px}
+  .permission-form p{margin:5px 0}
+  .permission-form .line{min-height:18px;margin:2px 0 8px}
+  .permission-form .choice{margin:5px 0;font-size:10pt;line-height:1.2}
+  .permission-form .notice{padding:8px 10px;margin:8px 0}
+  label{font-size:10pt}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body class="">
+<header><div class="wrap nav"><a aria-label="Hall's Driving home" class="brand" href="index.html"><img alt="Hall's Driving logo" src="assets/halls-driving-logo.png"/></a>
+<nav><a href="index.html">HOME</a><a href="about.html">ABOUT US</a><a href="defensive-driving.html">CLASSES &amp; SERVICES</a><a href="parents.html">PARENTS</a><a href="student-success.html">STUDENT SUCCESS</a><a href="contact.html">CONTACT</a></nav></div></header>
+<section class="page-head"><div class="wrap"><h1>Website Photo Permission Slip</h1><p>Student and parent/legal guardian authorization</p></div></section>
+<section class="section"><div class="wrap">
+<form class="permission-form">
+<img class="permission-logo" src="assets/halls-driving-logo.png" alt="Hall's Driving logo"/>
+<h2>Hall's Driving Photo and Website Permission</h2>
+<p>This form gives Hall's Driving permission to use a student's original photograph on the Hall's Driving website, Student Success page, and related Hall's Driving promotional materials.</p>
+<label><strong>Student's full name</strong></label><div class="line"></div>
+<label><strong>Parent/legal guardian's full name</strong></label><div class="line"></div>
+<label><strong>Phone number</strong></label><div class="line"></div>
+<label><strong>Email address</strong></label><div class="line"></div>
+<div class="notice">
+<strong>Please choose one:</strong>
+<div class="choice">☐ I give permission for the student's photograph to be featured on the Hall's Driving website and related Hall's Driving materials.</div>
+<div class="choice">☐ I do not give permission for the student's photograph to be featured.</div>
+</div>
+<p>I understand that no private contact information will be posted with the photograph. I may contact Hall's Driving to request removal of the photograph from the website.</p>
+<label><strong>Parent/legal guardian signature</strong></label><div class="line"></div>
+<label><strong>Date</strong></label><div class="line"></div>
+<label><strong>Student signature, when applicable</strong></label><div class="line"></div>
+<button class="btn print-btn" onclick="window.print()" type="button">Print Permission Slip</button>
+
+</form>
+</div></section>
+<footer class="footer"><div class="wrap footer-grid">
+<div><h3>Find Us</h3><p>212 Wall St.<br/>Gadsden, AL</p>
+<iframe class="map" loading="lazy" src="https://www.google.com/maps?q=212%20Wall%20St%2C%20Gadsden%2C%20AL&amp;output=embed" title="Hall's Driving map"></iframe></div>
+<div><h3>Office Hours</h3><p>Monday–Friday<br/>9:00 AM–4:00 PM</p><h3 class="defensive-hours-title">Defensive Driving Class Hours</h3><p>Tuesday: 4:30 PM–8:30 PM<br/>Wednesday: 9:30 AM–1:30 PM</p></div>
+<div><h3>Contact</h3><p>Office: (256) 543-3738<br/>Mobile: (256) 328-6540<br/>Halls.driving@gmail.com</p></div>
+<div><h3>Follow Us</h3><p><a class="facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">Like us on Facebook</a></p>
+<h3>Website</h3><p>HallsDrivingAL.com<br/>Cash &amp; Credit accepted</p></div>
+</div><div class="copyright">© Hall's Driving. All rights reserved. <span class="footer-tagline">Building Safe, Confident Drivers Since 1997.</span></div></footer>
+</body>
+</html>

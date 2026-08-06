@@ -1,0 +1,25 @@
+HALL'S DRIVING EMAIL AND FORMS SETUP
+
+The Contact and Defensive Driving forms are configured for Netlify Forms.
+They also call a Netlify Function that can send:
+1. A branded notification to Hall's Driving.
+2. A branded automatic response to the person who submits the form.
+
+To turn on branded email delivery in Netlify:
+- Add environment variable RESEND_API_KEY.
+- Add environment variable OWNER_EMAIL = Halls.driving@gmail.com
+- Add environment variable FROM_EMAIL using a verified sender on HallsDrivingAL.com.
+- Redeploy the site.
+
+Without those email variables, Netlify can still collect form submissions after Forms are enabled, but branded automatic emails will not send.
+
+POST-CLASS THANK-YOU EMAIL
+The approved email is in email-templates/DEFENSIVE-DRIVING-POST-CLASS-THANK-YOU.txt.
+Automatic delivery one hour after class requires a scheduling service or workflow to be connected after the live site and email sender are verified. It is not represented as active until that connection is completed and tested.
+
+TEST BEFORE ANNOUNCING THE SITE
+- Submit the Contact form using a test email.
+- Confirm Hall's Driving receives the owner notification.
+- Confirm the test customer receives the friendly auto-response.
+- Submit a Defensive Driving registration and repeat the test.
+- Confirm the logo displays in both emails.

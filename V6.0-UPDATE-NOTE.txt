@@ -1,0 +1,1 @@
+Added an editable 'Online Defensive Driving Courses — Coming Soon' notice to the Classes & Services page. Leave the notice blank in the editor to hide it. Home remains index.html.
