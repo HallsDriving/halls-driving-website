@@ -1,68 +1,707 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>Website Photo Permission Slip | Hall's Driving</title>
-<link href="styles.css" rel="stylesheet"/>
-<style>
-.permission-form{max-width:900px;margin:auto;background:white;border:2px solid var(--gold);border-radius:10px;padding:32px}
-.permission-form h2{color:var(--red);margin-top:0}.permission-logo{display:block;width:150px;max-width:35%;height:auto;margin:0 auto 14px}
-.permission-form .line{border-bottom:1px solid #888;min-height:32px;margin:8px 0 20px}
-.permission-form .choice{margin:14px 0;font-size:1.05rem}
-.permission-form .notice{background:var(--cream);border-left:5px solid var(--gold);padding:16px;margin:22px 0}
-.print-btn{margin-right:10px}
-@page{size:Letter portrait;margin:.35in}
-@media print{
-  header,.footer,.page-head,.print-btn,.back-btn{display:none!important}
-  html,body{background:white!important;margin:0!important;padding:0!important;font-size:10.5pt;line-height:1.25}
-  .section{padding:0!important}
-  .wrap{width:100%!important;max-width:none!important;margin:0!important}
-  .permission-form{border:0!important;border-radius:0!important;max-width:none!important;margin:0!important;padding:0!important}
-  .permission-form h2{font-size:17pt;margin:0 0 6px}
-  .permission-form p{margin:5px 0}
-  .permission-form .line{min-height:18px;margin:2px 0 8px}
-  .permission-form .choice{margin:5px 0;font-size:10pt;line-height:1.2}
-  .permission-form .notice{padding:8px 10px;margin:8px 0}
-  label{font-size:10pt}
-  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
-}
-</style>
-</head>
-<body class="">
-<header><div class="wrap nav"><a aria-label="Hall's Driving home" class="brand" href="index.html"><img alt="Hall's Driving logo" src="assets/halls-driving-logo.png"/></a>
-<nav><a href="index.html">HOME</a><a href="about.html">ABOUT US</a><a href="defensive-driving.html">CLASSES &amp; SERVICES</a><a href="parents.html">PARENTS</a><a href="student-success.html">STUDENT SUCCESS</a><a href="contact.html">CONTACT</a></nav></div></header>
-<section class="page-head"><div class="wrap"><h1>Website Photo Permission Slip</h1><p>Student and parent/legal guardian authorization</p></div></section>
-<section class="section"><div class="wrap">
-<form class="permission-form">
-<img class="permission-logo" src="assets/halls-driving-logo.png" alt="Hall's Driving logo"/>
-<h2>Hall's Driving Photo and Website Permission</h2>
-<p>This form gives Hall's Driving permission to use a student's original photograph on the Hall's Driving website, Student Success page, and related Hall's Driving promotional materials.</p>
-<label><strong>Student's full name</strong></label><div class="line"></div>
-<label><strong>Parent/legal guardian's full name</strong></label><div class="line"></div>
-<label><strong>Phone number</strong></label><div class="line"></div>
-<label><strong>Email address</strong></label><div class="line"></div>
-<div class="notice">
-<strong>Please choose one:</strong>
-<div class="choice">☐ I give permission for the student's photograph to be featured on the Hall's Driving website and related Hall's Driving materials.</div>
-<div class="choice">☐ I do not give permission for the student's photograph to be featured.</div>
-</div>
-<p>I understand that no private contact information will be posted with the photograph. I may contact Hall's Driving to request removal of the photograph from the website.</p>
-<label><strong>Parent/legal guardian signature</strong></label><div class="line"></div>
-<label><strong>Date</strong></label><div class="line"></div>
-<label><strong>Student signature, when applicable</strong></label><div class="line"></div>
-<button class="btn print-btn" onclick="window.print()" type="button">Print Permission Slip</button>
+<html lang="en">
 
-</form>
-</div></section>
-<footer class="footer"><div class="wrap footer-grid">
-<div><h3>Find Us</h3><p>212 Wall St.<br/>Gadsden, AL</p>
-<iframe class="map" loading="lazy" src="https://www.google.com/maps?q=212%20Wall%20St%2C%20Gadsden%2C%20AL&amp;output=embed" title="Hall's Driving map"></iframe></div>
-<div><h3>Office Hours</h3><p>Monday–Friday<br/>9:00 AM–4:00 PM</p><h3 class="defensive-hours-title">Defensive Driving Class Hours</h3><p>Tuesday: 4:30 PM–8:30 PM<br/>Wednesday: 9:30 AM–1:30 PM</p></div>
-<div><h3>Contact</h3><p>Office: (256) 543-3738<br/>Mobile: (256) 328-6540<br/>Halls.driving@gmail.com</p></div>
-<div><h3>Follow Us</h3><p><a class="facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">Like us on Facebook</a></p>
-<h3>Website</h3><p>HallsDrivingAL.com<br/>Cash &amp; Credit accepted</p></div>
-</div><div class="copyright">© Hall's Driving. All rights reserved. <span class="footer-tagline">Building Safe, Confident Drivers Since 1997.</span></div></footer>
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Photo & Website Permission Form | Hall's Driving</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+
+    body {
+
+      background: #111;
+
+      color: #fff;
+
+    }
+
+    .permission-wrap {
+
+      max-width: 900px;
+
+      margin: 40px auto;
+
+      padding: 20px;
+
+    }
+
+    .permission-form {
+
+      background: #fff;
+
+      color: #222;
+
+      border: 3px solid #c99a2e;
+
+      border-radius: 14px;
+
+      padding: 32px;
+
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+
+    }
+
+    .permission-logo {
+
+      display: block;
+
+      width: 170px;
+
+      max-width: 45%;
+
+      height: auto;
+
+      margin: 0 auto 18px;
+
+    }
+
+    .permission-form h1 {
+
+      color: #9d1c24;
+
+      text-align: center;
+
+      margin-bottom: 12px;
+
+    }
+
+    .intro {
+
+      text-align: center;
+
+      line-height: 1.55;
+
+      margin-bottom: 28px;
+
+    }
+
+    .field-group {
+
+      margin-bottom: 20px;
+
+    }
+
+    .field-group label,
+
+    .choice-title {
+
+      display: block;
+
+      font-weight: 700;
+
+      margin-bottom: 7px;
+
+    }
+
+    input[type="text"],
+
+    input[type="email"],
+
+    input[type="tel"],
+
+    input[type="date"] {
+
+      width: 100%;
+
+      box-sizing: border-box;
+
+      padding: 12px;
+
+      border: 1px solid #777;
+
+      border-radius: 6px;
+
+      font-size: 16px;
+
+    }
+
+    fieldset {
+
+      border: 1px solid #c99a2e;
+
+      background: #fff8dc;
+
+      border-radius: 8px;
+
+      padding: 18px;
+
+      margin: 26px 0;
+
+    }
+
+    legend {
+
+      font-weight: 700;
+
+      padding: 0 8px;
+
+    }
+
+    .choice {
+
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 10px;
+
+      margin: 12px 0;
+
+      line-height: 1.45;
+
+    }
+
+    .choice input {
+
+      margin-top: 4px;
+
+      transform: scale(1.2);
+
+    }
+
+    .notice {
+
+      border-left: 5px solid #c99a2e;
+
+      background: #f7f1df;
+
+      padding: 14px;
+
+      margin: 22px 0;
+
+      line-height: 1.5;
+
+    }
+
+    .consent-check {
+
+      display: flex;
+
+      align-items: flex-start;
+
+      gap: 10px;
+
+      margin: 20px 0;
+
+      line-height: 1.45;
+
+    }
+
+    .consent-check input {
+
+      margin-top: 4px;
+
+      transform: scale(1.2);
+
+    }
+
+    .button-row {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 28px;
+
+    }
+
+    button {
+
+      border: 0;
+
+      border-radius: 7px;
+
+      padding: 13px 20px;
+
+      font-size: 16px;
+
+      font-weight: 700;
+
+      cursor: pointer;
+
+    }
+
+    .submit-button {
+
+      background: #b1121b;
+
+      color: #fff;
+
+    }
+
+    .print-button {
+
+      background: #c99a2e;
+
+      color: #111;
+
+    }
+
+    .privacy-note {
+
+      margin-top: 18px;
+
+      font-size: 14px;
+
+      color: #555;
+
+    }
+
+    @media (max-width: 650px) {
+
+      .permission-wrap {
+
+        margin: 15px auto;
+
+        padding: 10px;
+
+      }
+
+      .permission-form {
+
+        padding: 22px 16px;
+
+      }
+
+      .permission-form h1 {
+
+        font-size: 25px;
+
+      }
+
+      .button-row button {
+
+        width: 100%;
+
+      }
+
+    }
+
+    @media print {
+
+      body {
+
+        background: #fff;
+
+      }
+
+      header,
+
+      footer,
+
+      .button-row {
+
+        display: none !important;
+
+      }
+
+      .permission-wrap {
+
+        max-width: none;
+
+        margin: 0;
+
+        padding: 0;
+
+      }
+
+      .permission-form {
+
+        box-shadow: none;
+
+        border-radius: 0;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <main class="permission-wrap">
+
+    <form
+
+      class="permission-form"
+
+      name="photo-website-permission"
+
+      method="POST"
+
+      data-netlify="true"
+
+      netlify-honeypot="bot-field"
+
+      action="/permission-slip.html?submitted=true"
+
+    >
+
+      <input
+
+        type="hidden"
+
+        name="form-name"
+
+        value="photo-website-permission"
+
+      >
+
+      <p hidden>
+
+        <label>
+
+          Do not fill this out:
+
+          <input name="bot-field">
+
+        </label>
+
+      </p>
+
+      <input
+
+        type="hidden"
+
+        name="subject"
+
+        data-remove-prefix
+
+        value="New Hall's Driving Photo Permission Form"
+
+      >
+
+      <img
+
+        src="halls-driving-logo.png"
+
+        alt="Hall's Driving logo"
+
+        class="permission-logo"
+
+      >
+
+      <h1>Hall's Driving Photo and Website Permission</h1>
+
+      <p class="intro">
+
+        This form gives Hall's Driving permission to use a student's original
+
+        photograph on the Hall's Driving website, Student Success page, and
+
+        related Hall's Driving promotional materials.
+
+      </p>
+
+      <div class="field-group">
+
+        <label for="student-name">Student's full name *</label>
+
+        <input
+
+          type="text"
+
+          id="student-name"
+
+          name="student_name"
+
+          required
+
+        >
+
+      </div>
+
+      <div class="field-group">
+
+        <label for="parent-name">
+
+          Parent/legal guardian's full name *
+
+        </label>
+
+        <input
+
+          type="text"
+
+          id="parent-name"
+
+          name="parent_guardian_name"
+
+          required
+
+        >
+
+      </div>
+
+      <div class="field-group">
+
+        <label for="phone">Phone number *</label>
+
+        <input
+
+          type="tel"
+
+          id="phone"
+
+          name="phone"
+
+          required
+
+        >
+
+      </div>
+
+      <div class="field-group">
+
+        <label for="email">Email address *</label>
+
+        <input
+
+          type="email"
+
+          id="email"
+
+          name="email"
+
+          required
+
+        >
+
+      </div>
+
+      <fieldset>
+
+        <legend>Please choose one *</legend>
+
+        <label class="choice">
+
+          <input
+
+            type="radio"
+
+            name="permission_choice"
+
+            value="I give permission"
+
+            required
+
+          >
+
+          <span>
+
+            I give permission for the student's photograph to be featured on
+
+            the Hall's Driving website and related Hall's Driving materials.
+
+          </span>
+
+        </label>
+
+        <label class="choice">
+
+          <input
+
+            type="radio"
+
+            name="permission_choice"
+
+            value="I do not give permission"
+
+            required
+
+          >
+
+          <span>
+
+            I do not give permission for the student's photograph to be
+
+            featured.
+
+          </span>
+
+        </label>
+
+      </fieldset>
+
+      <div class="notice">
+
+        I understand that no private contact information will be posted with
+
+        the photograph. I may contact Hall's Driving to request removal of the
+
+        photograph from the website.
+
+      </div>
+
+      <label class="consent-check">
+
+        <input
+
+          type="checkbox"
+
+          name="electronic_signature_consent"
+
+          value="Agreed"
+
+          required
+
+        >
+
+        <span>
+
+          I understand that typing my name below serves as my electronic
+
+          signature and confirms that the information submitted is accurate.
+
+        </span>
+
+      </label>
+
+      <div class="field-group">
+
+        <label for="parent-signature">
+
+          Parent/legal guardian electronic signature *
+
+        </label>
+
+        <input
+
+          type="text"
+
+          id="parent-signature"
+
+          name="parent_guardian_signature"
+
+          required
+
+        >
+
+      </div>
+
+      <div class="field-group">
+
+        <label for="date">Date *</label>
+
+        <input
+
+          type="date"
+
+          id="date"
+
+          name="date"
+
+          required
+
+        >
+
+      </div>
+
+      <div class="field-group">
+
+        <label for="student-signature">
+
+          Student electronic signature, when applicable
+
+        </label>
+
+        <input
+
+          type="text"
+
+          id="student-signature"
+
+          name="student_signature"
+
+        >
+
+      </div>
+
+      <div class="button-row">
+
+        <button type="submit" class="submit-button">
+
+          Submit Permission Form
+
+        </button>
+
+        <button
+
+          type="button"
+
+          class="print-button"
+
+          onclick="window.print()"
+
+        >
+
+          Print Form
+
+        </button>
+
+      </div>
+
+      <p class="privacy-note">
+
+        Required fields are marked with an asterisk. Submitted forms are sent
+
+        securely to Hall's Driving for review.
+
+      </p>
+
+    </form>
+
+  </main>
+
+  <script>
+
+    const params = new URLSearchParams(window.location.search);
+
+    if (params.get("submitted") === "true") {
+
+      document.querySelector(".permission-form").innerHTML = `
+
+        <img
+
+          src="halls-driving-logo.png"
+
+          alt="Hall's Driving logo"
+
+          class="permission-logo"
+
+        >
+
+        <h1>Thank You</h1>
+
+        <p class="intro">
+
+          Your Hall's Driving Photo and Website Permission Form has been
+
+          submitted successfully.
+
+        </p>
+
+      `;
+
+    }
+
+  </script>
+
 </body>
+
 </html>
+
+
+--
+Sent from Gmail Mobile
