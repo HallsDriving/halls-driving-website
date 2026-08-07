@@ -183,3 +183,80 @@ nav{margin-left:auto}
 .footer-thank-you p{margin:0 0 5px;font-size:1.05rem}
 .footer-thank-you strong{color:var(--gold)}
 button:disabled{opacity:.7;cursor:wait}
+/* Mobile layout cleanup */
+@media screen and (max-width: 850px) {
+  header {
+    position: static;
+  }
+
+  .nav {
+    min-height: auto;
+    padding: 12px 0;
+    gap: 12px;
+  }
+
+  .brand img {
+    width: 105px;
+    height: auto;
+    margin: 0;
+  }
+
+  nav {
+    width: 100%;
+    justify-content: center;
+    gap: 8px 14px;
+  }
+
+  nav a {
+    font-size: 0.78rem !important;
+    padding: 8px 4px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hero-copy {
+    padding: 42px 20px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.2rem, 10vw, 3.5rem);
+  }
+
+  .hero-photo img {
+    height: auto;
+    max-height: 430px;
+  }
+
+  .section {
+    padding: 45px 0;
+  }
+
+  .home-about,
+  .services,
+  .facts,
+  .staff-grid,
+  .gallery,
+  .class-cards,
+  .calendar-layout,
+  .form-grid,
+  .contact-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wrap {
+    width: min(100% - 28px, 1180px);
+  }
+
+  .footer {
+    text-align: center;
+  }
+
+  .map {
+    height: 260px;
+  }
+}
