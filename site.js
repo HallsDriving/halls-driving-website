@@ -147,3 +147,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (today >= new Date(year, month, 1)) panel.hidden = true;
   });
 });
+// Mobile home-page menu toggle
+const mobileMenuButton = document.querySelector('.mobile-menu-toggle');
+
+if (mobileMenuButton) {
+  mobileMenuButton.addEventListener('click', function () {
+    const nav = mobileMenuButton.closest('nav');
+    const isOpen = nav.classList.toggle('menu-open');
+
+    mobileMenuButton.setAttribute('aria-expanded', isOpen);
+    mobileMenuButton.textContent = isOpen ? 'CLOSE ✕' : 'MENU ✦';
+  });
+}
