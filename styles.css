@@ -337,41 +337,7 @@ button:disabled{opacity:.7;cursor:wait}
     height: 260px;
   }
 }
-/* MOBILE NAV — desktop-style single row */
-@media screen and (max-width: 850px) {
-  header {
-    overflow-x: auto;
-  }
 
-  .nav {
-    min-height: 72px;
-    display: flex;
-    flex-wrap: nowrap !important;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-    padding: 0 14px;
-    width: max-content;
-    min-width: 100%;
-  }
+  
 
-  .nav .brand {
-    display: none;
-  }
-
-  .nav nav,
-  nav {
-    display: flex;
-    flex-wrap: nowrap !important;
-    align-items: center;
-    gap: 16px;
-    width: max-content;
-  }
-
-  nav a {
-    flex: 0 0 auto;
-    white-space: nowrap !important;
-    font-size: 0.72rem !important;
-    padding: 25px 0 10px !important;
-  }
-}
+ 
