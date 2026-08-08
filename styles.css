@@ -183,30 +183,3 @@ nav{margin-left:auto}
 .footer-thank-you p{margin:0 0 5px;font-size:1.05rem}
 .footer-thank-you strong{color:var(--gold)}
 button:disabled{opacity:.7;cursor:wait}
-@media screen and (max-width: 850px) {
-  body.home-page .nav {
-    display: block;
-    padding: 12px 14px;
-  }
-
-  body.home-page .nav .brand {
-
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  body.home-page .nav nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0;
-    width: 100%;
-  }
-
-  body.home-page .nav nav a {
-    display: block;
-    width: 100%;
-    padding: 12px 0;
-    white-space: normal;
-  }
-}
