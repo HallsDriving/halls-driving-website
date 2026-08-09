@@ -32,7 +32,7 @@ nav a:hover,nav a.active{border-color:var(--red)}
 .parents-card{background:var(--cream);border:2px solid var(--gold);border-radius:10px;padding:30px;margin-bottom:28px}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .footer{background:var(--black);color:white;border-top:3px solid var(--red);padding:42px 0 0}.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.footer h3{color:var(--gold);text-transform:uppercase}.copyright{background:var(--red);margin-top:34px;padding:11px;text-align:center}
-@media(max-width:850px){header{position:static}.nav{flex-direction:column;padding:18px 0}.brand img{width:138px;height:126px;margin:-12px 0 -16px}nav{justify-content:center;gap:14px}nav a{padding:7px}.hero{grid-template-columns:1fr}.hero-copy{padding:60px 6%}.hero-photo img{height:auto}.services,.facts{grid-template-columns:1fr 1fr}.home-about,.calendar-layout,.contact-grid{grid-template-columns:1fr}.calendar-months{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+
 @media(max-width:520px){.services,.facts,.class-cards,.form-grid,.footer-grid,.staff-grid{grid-template-columns:1fr}}
 
 .map{width:100%;height:120px;border:0;border-radius:6px;margin-top:10px}
