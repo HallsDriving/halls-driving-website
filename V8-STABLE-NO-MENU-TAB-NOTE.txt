@@ -1,0 +1,18 @@
+HALL'S DRIVING V8 STABLE — NO COLLAPSIBLE MENU TAB
+
+Built from the approved V4 package supplied by the owner.
+
+Locked behavior:
+- Home remains index.html and is the site root.
+- Approved desktop layout/content remains intact.
+- No mobile MENU/hamburger toggle. Mobile navigation is always visible in a compact 2-column layout.
+- Explicit View Desktop Site button appears above the footer copyright on mobile.
+- Home keeps the large hero logo; the small top-left Home header logo stays hidden on mobile.
+- Permit & License page keeps the approved removals (no Alabama learner's permits bullet, no Written permit testing bullet).
+- Permission Slip keeps Print Permission Slip and Return to Home.
+- Contact and Defensive Driving forms use FormSubmit so they can send from GitHub Pages; first live submission requires one-time activation from the email sent to Halls.driving@gmail.com.
+- Contact submitter receives the approved Hall's Driving family 24–48 hour autoresponse after activation.
+- Defensive Driving registrant receives the approved registration autoresponse after activation.
+- Calendar/site content behavior and Student Success content are preserved.
+
+After deployment, test Home, both forms, mobile navigation, View Desktop Site, Permit & License, Permission Slip, calendar, and Student Success before making further edits.

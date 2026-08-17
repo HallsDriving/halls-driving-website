@@ -1,54 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  var menuToggle = document.querySelector('.menu-toggle');
-  var siteNavigation = document.getElementById('site-navigation');
-  if (menuToggle && siteNavigation) {
-    menuToggle.addEventListener('click', function () {
-      var isOpen = siteNavigation.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
-    });
-    siteNavigation.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        siteNavigation.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.setAttribute('aria-label', 'Open navigation menu');
-      });
-    });
-    window.addEventListener('resize', function () {
-      if (window.innerWidth > 850) {
-        siteNavigation.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      }
-    });
-  }
-
-
-  // Optional desktop view from a phone. This changes only the viewport; page content stays the same.
+  // Optional desktop view from a phone. The button is present in every page footer.
   (function setupViewModeToggle(){
     var meta = document.querySelector('meta[name="viewport"]');
-    if (!meta) return;
+    var button = document.getElementById('view-mode-toggle');
+    if (!meta || !button) return;
     var forcedDesktop = localStorage.getItem('hallsViewMode') === 'desktop';
-    if (forcedDesktop) meta.setAttribute('content','width=1180');
-    var copyright = document.querySelector('.copyright');
-    if (!copyright) return;
-    var button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'view-mode-toggle' + (forcedDesktop ? ' is-desktop-mode' : '');
-    button.textContent = forcedDesktop ? 'Return to Mobile View' : 'View Desktop Site';
+    function applyMode(){
+      forcedDesktop = localStorage.getItem('hallsViewMode') === 'desktop';
+      meta.setAttribute('content', forcedDesktop ? 'width=1180' : 'width=device-width,initial-scale=1');
+      button.textContent = forcedDesktop ? 'Return to Mobile View' : 'View Desktop Site';
+      button.classList.toggle('is-desktop-mode', forcedDesktop);
+    }
+    applyMode();
     button.addEventListener('click', function(){
-      var useDesktop = localStorage.getItem('hallsViewMode') !== 'desktop';
-      if (useDesktop) {
-        localStorage.setItem('hallsViewMode','desktop');
-        meta.setAttribute('content','width=1180');
-      } else {
-        localStorage.removeItem('hallsViewMode');
-        meta.setAttribute('content','width=device-width,initial-scale=1');
-      }
+      if (localStorage.getItem('hallsViewMode') === 'desktop') localStorage.removeItem('hallsViewMode');
+      else localStorage.setItem('hallsViewMode','desktop');
       window.location.reload();
     });
-    copyright.appendChild(document.createElement('br'));
-    copyright.appendChild(button);
   })();
 
   function escapeHtml(value) {
@@ -151,45 +120,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })
     .catch(function () { /* Static fallback stays visible if content cannot load. */ });
-
-  function encodeForm(form) {
-    return new URLSearchParams(new FormData(form)).toString();
-  }
-
-  function attachForm(formId, confirmationId, emailType) {
-    var form = document.getElementById(formId);
-    var confirmation = document.getElementById(confirmationId);
-    if (!form || !confirmation) return;
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      var button = form.querySelector('button[type="submit"]');
-      if (button) { button.disabled = true; button.textContent = 'Sending...'; }
-      var payload = Object.fromEntries(new FormData(form).entries());
-      payload.emailType = emailType;
-
-      fetch('/.netlify/functions/send-form-email', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(payload)
-      }).catch(function () { return null; }).then(function () {
-        return fetch('/', {
-          method: 'POST',
-          headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-          body: encodeForm(form)
-        });
-      }).then(function () {
-        form.hidden = true;
-        confirmation.hidden = false;
-        confirmation.scrollIntoView({behavior:'smooth', block:'center'});
-      }).catch(function () {
-        if (button) { button.disabled = false; button.textContent = formId === 'contact-form' ? 'Send Message' : 'Submit Registration'; }
-        alert('We could not send your message right now. Please call Hall\'s Driving at (256) 543-3738.');
-      });
-    });
-  }
-
-  attachForm('contact-form', 'contact-confirmation', 'contact');
-  attachForm('defensive-form', 'defensive-confirmation', 'defensive');
 
   // Calendar fallback: hide a month only after its final day has passed.
   var today = new Date();
