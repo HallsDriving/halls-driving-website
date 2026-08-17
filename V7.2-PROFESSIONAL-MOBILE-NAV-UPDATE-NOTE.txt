@@ -1,0 +1,7 @@
+Hall's Driving V7.2 Professional Mobile Navigation
+
+- Replaced the mobile JavaScript menu control with a native browser menu for improved reliability.
+- Added a polished gold MENU bar with a menu icon.
+- Menu opens into a clean black navigation panel with gold/red active-page styling.
+- Desktop navigation remains unchanged.
+- Home page remains index.html.
