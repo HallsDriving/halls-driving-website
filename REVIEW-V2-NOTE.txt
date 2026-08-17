@@ -1,0 +1,8 @@
+Hall's Driving Review Build v2
+
+Changes from the prior review build:
+- Restored the large Hall's Driving logo in the Home hero so it stands out as in the approved reference.
+- Kept the normal header/logo behavior on all other pages unchanged.
+- Root domain is configured to open index.html (Home), not Contact.
+- Added the Home canonical URL https://hallsdrivingal.com/.
+- No other page layouts were intentionally changed in this v2 correction.

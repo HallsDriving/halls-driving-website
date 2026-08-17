@@ -1,4 +1,56 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+  var menuToggle = document.querySelector('.menu-toggle');
+  var siteNavigation = document.getElementById('site-navigation');
+  if (menuToggle && siteNavigation) {
+    menuToggle.addEventListener('click', function () {
+      var isOpen = siteNavigation.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+    siteNavigation.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        siteNavigation.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 850) {
+        siteNavigation.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
+
+  // Optional desktop view from a phone. This changes only the viewport; page content stays the same.
+  (function setupViewModeToggle(){
+    var meta = document.querySelector('meta[name="viewport"]');
+    if (!meta) return;
+    var forcedDesktop = localStorage.getItem('hallsViewMode') === 'desktop';
+    if (forcedDesktop) meta.setAttribute('content','width=1180');
+    var copyright = document.querySelector('.copyright');
+    if (!copyright) return;
+    var button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'view-mode-toggle' + (forcedDesktop ? ' is-desktop-mode' : '');
+    button.textContent = forcedDesktop ? 'Return to Mobile View' : 'View Desktop Site';
+    button.addEventListener('click', function(){
+      var useDesktop = localStorage.getItem('hallsViewMode') !== 'desktop';
+      if (useDesktop) {
+        localStorage.setItem('hallsViewMode','desktop');
+        meta.setAttribute('content','width=1180');
+      } else {
+        localStorage.removeItem('hallsViewMode');
+        meta.setAttribute('content','width=device-width,initial-scale=1');
+      }
+      window.location.reload();
+    });
+    copyright.appendChild(document.createElement('br'));
+    copyright.appendChild(button);
+  })();
+
   function escapeHtml(value) {
     return String(value == null ? '' : value).replace(/[&<>'"]/g, function (char) {
       return {'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char];

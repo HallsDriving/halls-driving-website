@@ -1,0 +1,10 @@
+Hall's Driving Mobile Update
+
+This package keeps the desktop design and adds:
+- Compact hamburger navigation on phones and tablets
+- Mobile logo/header that stays visible without covering the page
+- Easier-to-tap navigation and buttons
+- Cleaner mobile hero, calendar, forms, galleries, and footer
+- No changes to the Defensive Driving schedule format or registration workflow
+
+Upload the package contents to the repository root, replacing matching files.
