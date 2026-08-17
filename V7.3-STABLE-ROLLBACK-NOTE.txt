@@ -1,0 +1,14 @@
+HALL'S DRIVING V7.3 STABLE ROLLBACK
+
+This build rolls back to the last known-good V7.1 site content and routing.
+It intentionally uses the reliable always-visible mobile navigation instead of
+collapsible-menu experiments.
+
+Preserved / verified:
+- index.html is Home and root routing points / to index.html
+- Approved Home desktop design and large hero logo
+- About, Defensive Driving, Student Success, Contact layouts restored
+- Permit & License unwanted bullets remain removed
+- Permission Slip Return to Home preserved
+- Existing form/calendar/email files preserved from V7.1
+- Desktop styling/content otherwise unchanged
