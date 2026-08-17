@@ -1,0 +1,7 @@
+Hall's Driving V7.1 Mobile Menu Update
+
+- Mobile navigation is closed by default.
+- Gold MENU button opens/closes navigation.
+- View Desktop Site appears in the mobile footer.
+- Desktop layout is unchanged.
+- Home remains index.html.
