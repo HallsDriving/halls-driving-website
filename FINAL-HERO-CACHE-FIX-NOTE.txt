@@ -1,0 +1,5 @@
+Final hero cache fix:
+- Home hero now uses assets/hero-final-black-sign-lighter.jpg
+- Same approved lighter image with black/red updated signage.
+- New filename forces browsers to load the updated image instead of a cached older yellow-sign image.
+- No other website content/layout/functionality changed.
