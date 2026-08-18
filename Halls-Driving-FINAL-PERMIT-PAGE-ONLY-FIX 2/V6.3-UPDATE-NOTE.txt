@@ -1,0 +1,5 @@
+Hall's Driving v6.3 update
+
+- Replaced the website logo with the corrected version.
+- The word “HALL'S” now appears in bright white throughout the website.
+- All existing page layouts, editable areas, print settings, and home-page-first behavior remain unchanged.

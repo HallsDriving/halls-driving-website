@@ -1,0 +1,6 @@
+EMERGENCY PHOTO FIX ONLY
+The missing Home photo file is now physically included at:
+assets/hero-approved-black-sign-final-v64.jpg
+
+Upload ALL contents of this extracted folder to the repository root.
+This package preserves the existing desktop/mobile layout and navigation.

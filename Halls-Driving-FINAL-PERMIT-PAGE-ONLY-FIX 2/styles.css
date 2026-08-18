@@ -1,0 +1,493 @@
+
+:root{--black:#080808;--red:#b51622;--gold:#e0ad21;--white:#fff;--cream:#fff8dc;--light:#f6f6f6;--ink:#171717}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white;line-height:1.55}
+img{max-width:100%;display:block}.wrap{width:min(1180px,92%);margin:auto}
+header{background:var(--black);color:white;border-bottom:3px solid var(--red);position:sticky;top:0;z-index:30}
+.nav{min-height:96px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{text-decoration:none;color:white;line-height:1;display:flex;align-items:center;flex:0 0 auto}
+.brand img{width:150px;height:138px;object-fit:contain;display:block;margin:-20px 0 -22px}
+nav{display:flex;gap:24px;align-items:center;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:800;font-size:.85rem;padding:36px 0 10px;border-bottom:3px solid transparent}
+nav a:hover,nav a.active{border-color:var(--red)}
+.hero{background:var(--black);display:grid;grid-template-columns:.9fr 1.1fr;min-height:610px}.hero-copy{color:white;padding:80px max(5vw,calc((100vw - 1180px)/2));padding-right:35px;display:flex;flex-direction:column;justify-content:center}
+.hero-copy h1{font-size:clamp(2.7rem,5vw,4.9rem);line-height:.98;margin:0 0 22px;text-transform:uppercase}.gold{color:var(--gold)}
+.hero-photo{display:flex;align-items:center;justify-content:center;background:#111;padding:18px}.hero-photo img{width:100%;height:560px;object-fit:contain;background:#111}
+.btn{display:inline-block;background:var(--red);color:white;text-decoration:none;padding:14px 23px;border-radius:6px;text-transform:uppercase;font-weight:800;border:0}
+.section{padding:70px 0}.dark{background:var(--black);color:white}.title{text-align:center;text-transform:uppercase;font-size:2.4rem;margin:0 0 38px;color:var(--red)}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{background:#171717;border:1px solid #444;border-radius:8px;padding:28px 20px;text-align:center}
+.service .icon{font-size:2.5rem;color:var(--gold);margin-bottom:15px}.service h3{color:white}.service p{color:#ddd;font-size:.94rem}
+.home-about{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.home-about img{border-radius:8px}.home-about h2{font-size:2.35rem;color:var(--red);text-transform:uppercase}
+.page-head{background:var(--black);color:white;padding:62px 0;border-bottom:3px solid var(--red)}.page-head h1{color:var(--red);font-size:3rem;text-transform:uppercase;margin:0}
+.story{max-width:980px;margin:auto;text-align:center}.story h2{color:var(--gold);font-size:2.5rem}.story p{font-size:1.08rem}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}.fact{background:#171717;border:1px solid #3b3b3b;color:white;text-align:center;padding:23px}.fact strong{display:block;color:var(--gold);font-size:1.3rem}
+.staff-grid{display:grid;grid-template-columns:repeat(2,minmax(0,430px));justify-content:center;gap:34px}.staff-card{background:linear-gradient(145deg,#262626,#0c0c0c);border:2px solid var(--gold);border-radius:14px;padding:18px}
+.staff-photo{background:radial-gradient(circle at center,#5d5d5d 0,#1b1b1b 72%);border-radius:10px;padding:18px}.staff-photo img{width:100%;height:390px;object-fit:contain;border:2px solid white;border-radius:7px}
+.staff-card h3{text-align:center;color:white;margin:18px 0 5px}.staff-card p{text-align:center;color:var(--gold);margin:0}
+.area-box{margin-top:34px;background:var(--cream);border:2px solid var(--gold);padding:25px;border-radius:9px;text-align:center;color:#111}.area-box h3{color:var(--red);margin-top:0}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.gallery figure{margin:0;border:1px solid #ddd;border-radius:9px;overflow:hidden;background:#f0f0f0}.gallery img{width:100%;height:430px;object-fit:contain}.gallery figcaption{background:var(--black);color:var(--gold);text-align:center;font-weight:800;padding:12px}
+.permission-note{margin-top:30px;background:var(--cream);border:2px solid var(--gold);padding:22px;border-radius:8px;text-align:center}
+.schedule-note{background:var(--cream);border:2px solid var(--gold);padding:23px;border-radius:8px}.class-cards{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:24px}
+.class-card{background:var(--black);color:white;padding:25px;border-radius:8px}.class-card h2{color:var(--gold)}
+.calendar-layout{display:grid;grid-template-columns:1.55fr .45fr;gap:28px;margin-top:28px}.calendar-months{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.month-panel{border:1px solid #ddd;border-radius:8px;overflow:hidden;background:white}.month-panel .panel-head{text-align:center;background:#222}.calendar-panel>.panel-body{padding:22px}.panel{border:1px solid #ddd;border-radius:8px;overflow:hidden}.panel-head{background:var(--black);color:white;padding:15px 20px;font-weight:800}.panel-body{padding:22px}
+.calendar{display:grid;grid-template-columns:repeat(7,1fr);border-left:1px solid #ddd;border-top:1px solid #ddd}.calendar div{min-height:67px;padding:8px;border-right:1px solid #ddd;border-bottom:1px solid #ddd}.calendar small{font-size:.72rem;line-height:1.15}.calendar .empty{background:#fafafa}.calendar .day{min-height:auto;background:#f4f4f4;color:var(--red);font-weight:800;text-align:center}.available{background:#fff1b8;font-weight:800}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.field label{display:block;font-weight:800;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #bbb;border-radius:5px}.full{grid-column:1/-1}
+.parents-card{background:var(--cream);border:2px solid var(--gold);border-radius:10px;padding:30px;margin-bottom:28px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.footer{background:var(--black);color:white;border-top:3px solid var(--red);padding:42px 0 0}.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.footer h3{color:var(--gold);text-transform:uppercase}.copyright{background:var(--red);margin-top:34px;padding:11px;text-align:center}
+@media(max-width:850px){header{position:static}.nav{flex-direction:column;padding:18px 0}.brand img{width:138px;height:126px;margin:-12px 0 -16px}nav{justify-content:center;gap:14px}nav a{padding:7px}.hero{grid-template-columns:1fr}.hero-copy{padding:60px 6%}.hero-photo img{height:auto}.services,.facts{grid-template-columns:1fr 1fr}.home-about,.calendar-layout,.contact-grid{grid-template-columns:1fr}.calendar-months{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.services,.facts,.class-cards,.form-grid,.footer-grid,.staff-grid{grid-template-columns:1fr}}
+
+.map{width:100%;height:120px;border:0;border-radius:6px;margin-top:10px}
+.facebook{color:white;text-decoration:none;font-weight:700}
+.facebook:hover{color:var(--gold)}
+
+
+
+
+/* Complete review updates */
+.wrap.nav{width:100%;padding-left:14px;padding-right:clamp(18px,4vw,56px)}
+.nav{justify-content:space-between;min-height:96px}
+.brand img{width:148px;height:132px;margin:-18px 0 -20px;object-fit:contain}
+nav{margin-left:auto}
+.footer-tagline{display:block;color:var(--gold);font-weight:700;margin-top:3px}
+.core-values{grid-template-columns:repeat(5,1fr)}
+.brand-promise p{font-size:1.2rem;font-weight:800;margin-bottom:0}
+.success-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:34px;border-bottom:2px solid #ddd}
+.tab-button{border:0;background:#ededed;color:#222;padding:13px 24px;font-weight:800;font-size:1rem;cursor:pointer;border-radius:7px 7px 0 0}
+.tab-button.active{background:var(--red);color:white}
+.tab-panel[hidden]{display:none}.tab-panel.active{display:block}
+.success-intro{max-width:900px;margin:0 auto 35px;text-align:center;font-size:1.1rem}
+.success-highlights{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.success-highlight{background:var(--black);color:white;border:2px solid var(--gold);border-radius:9px;padding:25px;text-align:center}
+.success-highlight h3{color:var(--gold)}
+.calendar-auto-note{margin:0 0 20px;background:#fff8dc;border-left:5px solid var(--gold);padding:12px 14px;font-weight:700}
+.calendar-empty-message{grid-column:1/-1;background:var(--cream);border:2px solid var(--gold);padding:24px;text-align:center;font-weight:800}
+.month-panel[hidden]{display:none}
+@media(max-width:1050px){.core-values{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.wrap.nav{padding:14px 4%}.nav{flex-direction:column}.brand img{width:138px;height:122px;margin:-10px 0 -14px}nav{margin-left:0;justify-content:center}.success-highlights{grid-template-columns:1fr}}
+@media(max-width:520px){.core-values{grid-template-columns:1fr}.success-tabs{align-items:stretch}.tab-button{flex:1;padding:12px 10px}}
+
+.student-photos-title{margin-top:55px}
+
+/* Approved Home-page branding: keep the standard header and restore the large hero logo. */
+.home-page header .brand{display:flex}
+.home-page .nav{justify-content:space-between;min-height:96px}
+.home-page nav{margin-left:auto}
+.home-hero-logo{display:block;width:min(360px,85%);margin:0 0 34px;text-decoration:none}
+.home-hero-logo img{width:100%;height:auto;object-fit:contain}
+.home-page .hero-copy{padding-top:42px;padding-bottom:56px}
+
+/* Print branding: show the Hall's Driving logo on every printable page. */
+.print-only-logo{display:none}
+@media print{
+  .print-only-logo{display:block!important;text-align:center;margin:0 0 12pt}
+  .print-only-logo img{display:inline-block;width:1.45in;max-height:.95in;object-fit:contain}
+}
+
+/* Larger online defensive-driving coming-soon notice */
+.online-course-notice .panel-head {
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+.online-course-notice .panel-body p {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .online-course-notice .panel-head {
+    font-size: 1.25rem;
+  }
+  .online-course-notice .panel-body p {
+    font-size: 1.08rem;
+  }
+}
+
+/* V6.2: Increase text size throughout the website without changing print sizing. */
+@media screen {
+  html { font-size: 112.5%; }
+  input, select, textarea, button { font: inherit; }
+}
+@media screen and (max-width: 520px) {
+  html { font-size: 106.25%; }
+}
+
+/* V6.6: New high-contrast logo and accessibility font-size increase. */
+@media screen {
+  html { font-size: 125%; }
+  body { line-height: 1.68; }
+  nav a,
+  .btn,
+  .service p,
+  .story p,
+  .success-intro,
+  .brand-promise p,
+  .permission-note,
+  .schedule-note,
+  .area-box,
+  .parents-card,
+  .panel-body,
+  .footer p,
+  .footer a,
+  .footer-tagline,
+  .copyright,
+  .field label,
+  .field input,
+  .field select,
+  .field textarea,
+  .calendar small,
+  .class-card p,
+  .contact-grid p,
+  .gallery figcaption,
+  .site-announcement p {
+    font-size: 1rem;
+  }
+  nav a { font-size: 1rem; }
+  .btn { padding: 16px 28px; }
+  .panel-head { font-size: 1.08rem; }
+  .field input,
+  .field select,
+  .field textarea { padding: 14px; }
+}
+@media screen and (max-width: 900px) {
+  html { font-size: 118.75%; }
+}
+@media screen and (max-width: 520px) {
+  html { font-size: 112.5%; }
+}
+
+/* V6.8 final: keep the desktop navigation on one line while preserving larger site text. */
+@media screen and (min-width: 851px) {
+  nav { flex-wrap: nowrap; gap: 16px; }
+  nav a { font-size: 0.78rem !important; white-space: nowrap; }
+}
+.defensive-hours-title { margin-top: 18px; }
+
+/* V7.0 launch-content and form updates */
+.home-welcome{background:#fff8dc;border-top:4px solid var(--gold);border-bottom:1px solid #eadba8}
+.home-welcome h2{color:var(--red);text-transform:uppercase;font-size:2.45rem;margin-bottom:18px}
+.home-welcome .welcome-closing{font-weight:800;color:#111;font-size:1.12rem}
+.about-journey{margin:45px auto 25px;padding:30px;background:#151515;border:2px solid var(--gold);border-radius:10px}
+.about-journey h2{color:var(--gold);text-transform:uppercase}
+.about-journey .journey-closing{color:var(--gold);font-weight:800;font-size:1.25rem;margin-bottom:0}
+.form-confirmation{text-align:center;padding:25px 10px}
+.form-confirmation img{width:180px;max-height:150px;object-fit:contain;margin:0 auto 18px}
+.form-confirmation h2{color:var(--red);text-transform:uppercase}
+.hidden-field{position:absolute;left:-9999px}
+.footer-thank-you{text-align:center;border-top:1px solid #333;padding:26px 5%;color:#fff}
+.footer-thank-you p{margin:0 0 5px;font-size:1.05rem}
+.footer-thank-you strong{color:var(--gold)}
+button:disabled{opacity:.7;cursor:wait}
+
+/* Final responsive navigation — approved desktop design is unchanged. */
+.menu-toggle{display:none;appearance:none;background:#080808;border:2px solid var(--gold);border-radius:7px;width:52px;height:46px;padding:9px;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+.menu-toggle span{display:block;width:26px;height:3px;border-radius:3px;background:#fff;transition:transform .2s ease,opacity .2s ease}
+.menu-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+.menu-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+.view-mode-toggle{display:inline-block;margin-top:8px;background:transparent;color:var(--gold);border:1px solid var(--gold);border-radius:5px;padding:7px 10px;font:inherit;font-size:.8rem;cursor:pointer}
+
+@media(max-width:850px){
+  header{position:sticky;top:0}
+  .wrap.nav,.home-page .wrap.nav{width:100%;min-height:88px;padding:8px 4%;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}
+  .nav,.home-page .nav{flex-direction:initial;justify-content:initial;min-height:88px}
+  .brand,.home-page header .brand{display:flex;grid-column:1;align-items:center}
+  .brand img{width:118px;height:92px;margin:-8px 0 -10px;object-fit:contain}
+  .menu-toggle{display:flex;grid-column:3}
+  nav#site-navigation{grid-column:1/-1;display:none!important;width:100%;margin:0;padding:8px 0 10px;border-top:1px solid #333;flex-direction:column;align-items:stretch;gap:0}
+  nav#site-navigation.open{display:flex!important}
+  nav#site-navigation a{display:block;padding:13px 10px;border-bottom:1px solid #333;border-left:4px solid transparent;font-size:.95rem!important;line-height:1.25}
+  nav#site-navigation a:hover,nav#site-navigation a.active{border-bottom-color:#333;border-left-color:var(--red);background:#171717}
+  .hero{grid-template-columns:1fr;min-height:auto}
+  .hero-copy{padding:48px 6% 38px;text-align:left}
+  .hero-copy h1{font-size:clamp(2.45rem,11vw,3.45rem)}
+  .hero-photo{padding:10px}.hero-photo img{height:auto;max-height:420px;object-fit:contain}
+  .page-head{padding:40px 0}.page-head h1{font-size:clamp(2.1rem,9vw,2.85rem);line-height:1.05}
+  .section{padding:50px 0}.title{font-size:clamp(1.9rem,8vw,2.35rem);line-height:1.08}
+  .services,.facts,.class-cards,.form-grid,.footer-grid,.staff-grid,.success-highlights{grid-template-columns:1fr}
+  .home-about,.calendar-layout,.contact-grid{grid-template-columns:1fr}
+  .calendar-months{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .calendar-panel>.panel-body,.panel-body{padding:16px}
+  .calendar div{min-height:58px;padding:5px 3px;font-size:.82rem}.calendar small{font-size:.58rem}
+  .gallery img{height:auto;max-height:560px}
+  .footer{padding-top:34px}.footer-grid{gap:18px}.map{height:185px}
+  .btn{max-width:100%;text-align:center}
+  .permission-form{padding:22px 16px}
+}
+@media(max-width:520px){
+  .wrap{width:94%}
+  .class-card,.service,.parents-card,.panel-body{padding:20px 16px}
+  .calendar div{min-height:51px;font-size:.74rem}.calendar .day{font-size:.68rem}.calendar small{font-size:.52rem}
+  .form-grid{gap:14px}.field input,.field select,.field textarea{font-size:16px}
+  .footer-grid{text-align:center}.footer h3{margin-bottom:5px}
+}
+@media(min-width:851px){.view-mode-toggle:not(.is-desktop-mode){display:none}}
+
+/* Home hero logo remains prominent on phones without changing other page headers. */
+@media(max-width:850px){
+  .home-hero-logo{display:block!important;width:min(300px,78vw);margin:0 auto 28px}
+  .home-page .hero-copy{text-align:center;padding-top:34px}
+}
+
+/* v3 approved home header correction: no small top-left logo on Home only. */
+.home-page header .brand { display: none !important; }
+@media (max-width: 850px) {
+  .home-page header .brand { display: none !important; }
+}
+
+
+/* Call Our Office phone chooser */
+.call-office-wrap{margin-top:18px}
+.call-options{display:inline-block;position:relative}
+.call-options summary{list-style:none;cursor:pointer}
+.call-options summary::-webkit-details-marker{display:none}
+.call-options-panel{position:absolute;z-index:30;left:0;top:calc(100% + 8px);min-width:245px;background:#0a0a0a;border:2px solid #d8ad2b;border-radius:8px;padding:8px;box-shadow:0 10px 26px rgba(0,0,0,.35)}
+.call-options-panel a{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:11px 12px;color:#fff;text-decoration:none;border-radius:6px;white-space:nowrap}
+.call-options-panel a:hover,.call-options-panel a:focus{background:#1b1b1b}
+.call-options-panel strong{color:#d8ad2b}
+@media(max-width:850px){.call-options-panel{position:static;margin-top:8px;min-width:0;width:min(290px,86vw)}.call-options-panel a{white-space:normal}}
+
+/* V8 stable mobile navigation: no collapsible menu. Keep all approved page content intact. */
+.menu-toggle{display:none!important}
+.view-mode-row{display:flex;justify-content:center;align-items:center;padding:16px 14px 2px;background:var(--black)}
+.view-mode-toggle{appearance:none;background:transparent;color:var(--gold);border:1px solid var(--gold);border-radius:6px;padding:10px 15px;font:inherit;font-size:.9rem;font-weight:800;cursor:pointer}
+.thank-you-card{max-width:760px;margin:0 auto;text-align:center;background:#fff;border:1px solid #ddd;border-radius:10px;padding:34px}
+.thank-you-card img{width:150px;height:auto;margin:0 auto 18px}
+.thank-you-card h2{color:var(--red);font-size:2rem;margin:0 0 14px}
+.thank-you-card p{font-size:1.1rem;line-height:1.6;margin:0 0 22px}
+@media(max-width:850px){
+  .wrap.nav,.home-page .wrap.nav{display:block!important;width:100%;min-height:0;padding:10px 4% 12px}
+  .nav,.home-page .nav{display:block!important;min-height:0}
+  .brand{display:flex!important;justify-content:center;margin:0 auto 5px}
+  .home-page header .brand{display:none!important}
+  .brand img{width:112px!important;height:auto!important;margin:0!important}
+  nav#site-navigation{display:grid!important;grid-template-columns:1fr 1fr;width:100%;margin:0!important;padding:0;border-top:1px solid #2b2b2b;gap:0!important;align-items:stretch}
+  nav#site-navigation a{display:flex!important;align-items:center;justify-content:center;text-align:center;min-height:54px;padding:10px 8px!important;border:0!important;border-bottom:1px solid #2b2b2b!important;border-right:1px solid #2b2b2b!important;font-size:.85rem!important;line-height:1.2;background:#0b0b0b}
+  nav#site-navigation a:nth-child(even){border-right:0!important}
+  nav#site-navigation a[href="permission-slip.html"]{grid-column:1/-1}
+  nav#site-navigation a.active{color:var(--gold)!important;background:#151515!important;box-shadow:inset 0 -3px 0 var(--red)}
+  .view-mode-row{display:flex!important}
+}
+@media(max-width:520px){
+  nav#site-navigation a{font-size:.82rem!important;min-height:52px}
+}
+@media(min-width:851px){
+  .view-mode-row{display:none}
+  .view-mode-toggle.is-desktop-mode{display:inline-block}
+}
+
+/* FINAL MOBILE FUNCTIONAL NAV — keeps the approved tab look, but collapses it so page content is easy to view. */
+@media(max-width:850px){
+  header{position:sticky;top:0;z-index:1000;background:#080808}
+  .wrap.nav,.home-page .wrap.nav{display:grid!important;grid-template-columns:auto 1fr auto!important;align-items:center!important;gap:12px!important;padding:8px 4%!important}
+  .nav,.home-page .nav{display:grid!important}
+  .brand,.home-page header .brand{display:flex!important;grid-column:1!important;justify-content:flex-start!important;margin:0!important}
+  .brand img,.home-page header .brand img{width:82px!important;height:66px!important;object-fit:contain!important;margin:-4px 0!important}
+  .menu-toggle{display:flex!important;grid-column:3!important;width:auto!important;min-width:92px!important;height:44px!important;border-color:var(--red)!important;color:#fff!important;font-weight:900!important;font-size:.9rem!important;padding:8px 13px!important;gap:7px!important}
+  .menu-toggle .menu-label{display:inline!important}
+  .menu-toggle span:not(.menu-label){display:none!important}
+  nav#site-navigation{grid-column:1/-1!important;display:none!important;grid-template-columns:1fr 1fr!important;width:100%!important;margin:0!important;padding:0!important;border-top:1px solid #2b2b2b!important;gap:0!important}
+  nav#site-navigation.open{display:grid!important}
+  nav#site-navigation a{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;min-height:52px!important;padding:9px 7px!important;border:0!important;border-bottom:1px solid #2b2b2b!important;border-right:1px solid #2b2b2b!important;font-size:.82rem!important;line-height:1.18!important;background:#0b0b0b!important}
+  nav#site-navigation a:nth-child(even){border-right:0!important}
+  nav#site-navigation a[href="permission-slip.html"]{grid-column:1/-1!important}
+  nav#site-navigation a.active{color:var(--gold)!important;background:#151515!important;box-shadow:inset 0 -3px 0 var(--red)!important}
+  .hero-photo img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important}
+}
+@media(min-width:851px){.menu-toggle{display:none!important}}
+
+
+/* FINAL HOME/NAV VISIBILITY FIX
+   Keeps desktop unchanged visually, guarantees HOME is visible,
+   and uses the reliable two-column mobile tab navigation. */
+@media (min-width:851px){
+  nav#site-navigation{
+    display:flex !important;
+    visibility:visible !important;
+  }
+  nav#site-navigation a{
+    display:inline-block !important;
+    visibility:visible !important;
+  }
+  nav#site-navigation a[href="index.html"]{
+    display:inline-block !important;
+  }
+  .menu-toggle{
+    display:none !important;
+  }
+}
+
+@media (max-width:850px){
+  header{
+    position:static !important;
+    background:#080808 !important;
+  }
+
+  .wrap.nav,
+  .home-page .wrap.nav{
+    display:block !important;
+    width:100% !important;
+    min-height:0 !important;
+    padding:10px 4% 12px !important;
+  }
+
+  .nav,
+  .home-page .nav{
+    display:block !important;
+    min-height:0 !important;
+  }
+
+  .menu-toggle{
+    display:none !important;
+  }
+
+  .brand{
+    display:flex !important;
+    justify-content:center !important;
+    margin:0 auto 5px !important;
+  }
+
+  .home-page header .brand{
+    display:none !important;
+  }
+
+  .brand img{
+    width:112px !important;
+    height:auto !important;
+    margin:0 !important;
+  }
+
+  nav#site-navigation,
+  nav#site-navigation.open{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    border-top:1px solid #2b2b2b !important;
+    gap:0 !important;
+    align-items:stretch !important;
+  }
+
+  nav#site-navigation a{
+    display:flex !important;
+    visibility:visible !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    min-height:52px !important;
+    padding:9px 7px !important;
+    border:0 !important;
+    border-bottom:1px solid #2b2b2b !important;
+    border-right:1px solid #2b2b2b !important;
+    font-size:.82rem !important;
+    line-height:1.18 !important;
+    background:#0b0b0b !important;
+  }
+
+  nav#site-navigation a:nth-child(even){
+    border-right:0 !important;
+  }
+
+  nav#site-navigation a[href="permission-slip.html"]{
+    grid-column:1/-1 !important;
+  }
+
+  nav#site-navigation a.active{
+    color:var(--gold) !important;
+    background:#151515 !important;
+    box-shadow:inset 0 -3px 0 var(--red) !important;
+  }
+
+  .view-mode-row{
+    display:flex !important;
+  }
+
+  .hero-photo img{
+    width:100% !important;
+    height:auto !important;
+    object-fit:contain !important;
+  }
+}
+
+/* Permission form navigation must remain available on desktop and mobile. */
+.permission-actions .back-btn{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+
+/* FINAL MOBILE HOME LOGO ONLY
+   Do not alter the approved mobile navigation/tab layout. */
+@media (max-width:850px){
+  .home-page header .brand{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    width:100% !important;
+    margin:0 auto 8px !important;
+  }
+  .home-page header .brand img{
+    display:block !important;
+    width:112px !important;
+    height:auto !important;
+    margin:0 auto !important;
+    object-fit:contain !important;
+  }
+}
+
+
+/* FINAL PERMIT PAGE MOBILE CONSISTENCY
+   Only the Permit & License page: use the same current mobile header/navigation
+   treatment as the rest of the site. No content or desktop changes. */
+@media (max-width:850px){
+  body.permit-page header{
+    position:static !important;
+    background:#080808 !important;
+  }
+  body.permit-page .wrap.nav{
+    display:block !important;
+    width:100% !important;
+    min-height:0 !important;
+    padding:10px 4% 12px !important;
+  }
+  body.permit-page .brand{
+    display:flex !important;
+    justify-content:center !important;
+    margin:0 auto 5px !important;
+  }
+  body.permit-page .brand img{
+    width:112px !important;
+    height:auto !important;
+    margin:0 !important;
+  }
+  body.permit-page nav#site-navigation{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    gap:0 !important;
+    border-top:1px solid #2b2b2b !important;
+  }
+  body.permit-page nav#site-navigation a{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    min-height:52px !important;
+    padding:9px 7px !important;
+    border:0 !important;
+    border-bottom:1px solid #2b2b2b !important;
+    border-right:1px solid #2b2b2b !important;
+    font-size:.82rem !important;
+    line-height:1.18 !important;
+    background:#0b0b0b !important;
+  }
+  body.permit-page nav#site-navigation a:nth-child(even){
+    border-right:0 !important;
+  }
+  body.permit-page nav#site-navigation a[href^="permission-slip.html"]{
+    grid-column:1/-1 !important;
+  }
+}

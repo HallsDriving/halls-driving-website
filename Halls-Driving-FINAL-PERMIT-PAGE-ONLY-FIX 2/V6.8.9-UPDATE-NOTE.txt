@@ -1,0 +1,9 @@
+Hall's Driving v6.8.9
+
+Updated the shared website logo asset using the complete full-shield badge requested by the owner.
+- Entire badge shape preserved
+- Bold bright-white 3D HALL'S lettering
+- Brighter red DRIVING lettering
+- Gold shield, steering wheel, roadway, and EST. 1997 preserved
+- Outer white background removed for transparent display
+- Applies anywhere the shared assets/halls-driving-logo.png file is used

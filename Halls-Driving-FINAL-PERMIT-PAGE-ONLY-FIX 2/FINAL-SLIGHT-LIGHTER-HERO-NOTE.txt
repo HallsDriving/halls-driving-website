@@ -1,0 +1,5 @@
+Final Home photo adjustment:
+- Original real photo retained; no AI generation or face replacement.
+- Shadows lifted slightly, with highlights protected so the white car is not washed out.
+- Desktop layout/navigation remains unchanged.
+- Existing mobile navigation/home fixes remain included.

@@ -1,0 +1,18 @@
+HALL'S DRIVING — FINAL GO-LIVE NOTES
+
+1. HOME PAGE FIRST
+The live domain must point to the site root. Netlify will serve index.html first, so the Home page opens at HallsDrivingAL.com.
+
+2. PRINTABLE PAGES
+The Hall's Driving logo is included when website pages are printed. The Parent/Student Permission Form retains its dedicated logo and one-page print layout.
+
+3. SIMPLE EDITOR
+The /admin/ editor remains configured for approved content only:
+- Home announcement
+- First About paragraph
+- Class names and times
+- Calendar dates and availability
+- Student Success introduction
+- Student Success photos and captions
+
+The website navigation, colors, logo, page structure, and overall layout remain protected.

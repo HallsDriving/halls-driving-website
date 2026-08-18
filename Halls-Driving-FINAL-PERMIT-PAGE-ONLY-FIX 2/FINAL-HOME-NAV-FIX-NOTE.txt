@@ -1,0 +1,6 @@
+Final navigation correction:
+- HOME is explicitly visible on desktop navigation.
+- Mobile uses the reliable visible two-column tab layout (no collapsible menu).
+- Permission form keeps Return to Home visible.
+- View Desktop Site remains available.
+- No page content, forms, email routing, photos, or desktop design was otherwise changed.

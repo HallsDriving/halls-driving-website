@@ -1,0 +1,37 @@
+HALL'S DRIVING — FINAL LAUNCH CHECKLIST
+
+DESIGN PRESERVED
+- Approved larger desktop font sizing
+- Full Hall's Driving logo in the header on every page, including Home
+- Home opens first at the root URL
+- Original Home hero, Services, Why Families Choose Hall's Driving, and footer
+- Original About Us story, facts, Core Values, instructors, and footer
+- Original Defensive Driving cards, calendar, class details, registration form, and footer
+- Original Student Success two-column desktop photo gallery and permission notice
+- Original Contact page layout
+
+APPROVED CORRECTIONS
+- Removed Alabama learner's permits from Permit & License
+- Removed Written permit testing from Permit & License
+- No blank list bullets left behind
+- Permission Slip has Return to Home
+- Contact and Defensive Driving forms are configured for Netlify submissions and branded email notifications
+- Student Success photos and Defensive Driving dates are editable through /admin/ after Netlify CMS is configured
+- Defensive Driving calendar hides months only after they have passed; future approved dates come from content/site.json
+
+MOBILE
+- Compact gold-outlined menu button
+- Same full Hall's Driving header logo
+- Navigation links hidden until menu is opened
+- Same content as desktop, stacked responsively
+- View Desktop Site option in the footer
+
+BEFORE PUBLIC LAUNCH
+1. Deploy the entire package to Netlify (preferably by connecting the GitHub repository to Netlify).
+2. Configure RESEND_API_KEY, OWNER_EMAIL, and FROM_EMAIL in Netlify.
+3. Test Contact form owner + customer emails.
+4. Test Defensive Driving owner + registrant emails.
+5. Verify desktop and mobile pages.
+6. Connect HallsDrivingAL.com in Netlify Domain Management.
+7. Update GoDaddy DNS exactly as Netlify displays.
+8. Test the business-card QR code after hallsdrivingal.com is live.

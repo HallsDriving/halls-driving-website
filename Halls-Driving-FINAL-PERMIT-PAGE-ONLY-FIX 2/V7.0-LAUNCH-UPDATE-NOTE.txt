@@ -1,0 +1,21 @@
+HALL'S DRIVING V7.0 LAUNCH UPDATE
+
+Added:
+- Home-page welcome message.
+- About Us "Every Journey Is Different" section.
+- Friendly Contact form confirmation.
+- Friendly Defensive Driving registration confirmation.
+- Branded customer auto-response and owner notification function.
+- Approved post-class thank-you email template.
+- Editable Home photos, About instructor photos, announcements, calendar, class times, About wording, and Student Success photos through the website editor.
+- Warm Hall's Driving footer message.
+
+Kept unchanged:
+- Student Success page wording and layout; only photo editing remains available.
+- Home page remains index.html and is configured to open first.
+- No QR code was added to the website.
+
+Important:
+- Netlify Forms must be enabled after deployment.
+- Branded email delivery requires the environment variables described in EMAIL-AND-FORMS-SETUP-GUIDE.txt.
+- The one-hour post-class email requires a scheduling connection after the website is live; the approved wording is included, but it is not falsely marked active before setup and testing.

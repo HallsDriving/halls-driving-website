@@ -1,0 +1,8 @@
+FINAL COMPLETE NO-AI v2
+- Preserves the real/original Home-page car photo; no AI-generated photo is included.
+- Permission form now has Submit Permission Form as the primary action.
+- Permission form also keeps Print Form as an optional action.
+- Permission form keeps Return to Home.
+- Submitted permission forms are sent to Halls.driving@gmail.com through the same FormSubmit workflow used by the other live forms.
+- Added permission-thank-you.html confirmation page.
+- Existing responsive/mobile rules and View Desktop Site option are preserved.

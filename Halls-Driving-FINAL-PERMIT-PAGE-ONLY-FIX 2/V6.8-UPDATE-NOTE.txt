@@ -1,0 +1,10 @@
+Hall's Driving v6.8 Final Production Release
+
+Updates:
+- Preserved the approved logo from v6.6.
+- Reduced only the desktop navigation text so all menu items fit on one line.
+- Kept the larger accessibility font sizing throughout the rest of the website.
+- Added Defensive Driving Class Hours beneath the existing Office Hours on every page:
+  Tuesday: 4:30 PM–8:30 PM
+  Wednesday: 9:30 AM–1:30 PM
+- Home page remains index.html and opens first.

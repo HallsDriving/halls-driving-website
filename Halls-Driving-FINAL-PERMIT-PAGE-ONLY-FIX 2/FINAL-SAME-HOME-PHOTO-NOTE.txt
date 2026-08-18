@@ -1,0 +1,1 @@
+ONLY adjustment in this build: mobile and desktop Home views are forced to use the same approved/lightened Home car photo. Existing desktop and mobile layouts/navigation are otherwise preserved.

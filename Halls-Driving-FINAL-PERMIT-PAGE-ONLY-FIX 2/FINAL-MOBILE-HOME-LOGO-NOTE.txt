@@ -1,0 +1,5 @@
+Only final adjustment in this build:
+- Keep the approved mobile tab/navigation layout unchanged.
+- Keep the same approved Home photo on desktop and mobile.
+- Display the existing Hall's Driving logo at the top of the HOME page on mobile only.
+- No other page layout, content, forms, routing, or desktop styling changed.

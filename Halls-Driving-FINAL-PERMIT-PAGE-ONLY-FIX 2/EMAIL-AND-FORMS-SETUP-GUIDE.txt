@@ -1,0 +1,30 @@
+HALL'S DRIVING — EMAIL AND FORMS LAUNCH SETUP
+
+The Contact and Defensive Driving forms are configured for Netlify Forms and a Netlify Function.
+
+APPROVED EMAIL FLOW
+1. Contact form submission:
+   - Hall's Driving receives the inquiry at Halls.driving@gmail.com.
+   - The person submitting receives a branded confirmation stating that someone from the Hall's Driving family will respond within 24–48 hours.
+2. Defensive Driving registration:
+   - Hall's Driving receives the registration at Halls.driving@gmail.com.
+   - The registrant receives a branded confirmation thanking them for registering for a Hall's Driving Defensive Driving class.
+
+No scheduled reminder or post-class email is active in this launch version.
+
+NETLIFY EMAIL SETUP
+- Add RESEND_API_KEY in Netlify environment variables.
+- Add OWNER_EMAIL = Halls.driving@gmail.com
+- Add FROM_EMAIL using a sender address verified for HallsDrivingAL.com in Resend.
+- Redeploy the site after adding variables.
+
+IMPORTANT
+Without RESEND_API_KEY, Netlify Forms can still collect submissions, but the branded owner notification and automatic customer email will not be sent by the function.
+
+TEST BEFORE LAUNCH
+- Submit the Contact form with a test email.
+- Confirm Hall's Driving receives the inquiry.
+- Confirm the test customer receives the 24–48 hour Hall's Driving family response.
+- Submit a Defensive Driving registration.
+- Confirm Hall's Driving receives the registration.
+- Confirm the registrant receives the registration confirmation.

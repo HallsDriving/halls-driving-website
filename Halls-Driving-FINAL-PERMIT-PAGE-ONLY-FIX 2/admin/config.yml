@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "website"
+    label: "Website Updates"
+    files:
+      - name: "site_content"
+        label: "Hall's Driving Editable Content"
+        file: "content/site.json"
+        format: "json"
+        fields:
+          - label: "Home Page"
+            name: "home"
+            widget: "object"
+            fields:
+              - {label: "Announcement (leave blank to hide)", name: "announcement", widget: "text", required: false}
+              - {label: "Welcome Message", name: "welcome_text", widget: "text"}
+              - {label: "Main Waving Instructor Photo", name: "hero_photo", widget: "image"}
+              - {label: "Home Storefront Photo", name: "about_photo", widget: "image"}
+          - label: "About Page"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "First Paragraph", name: "first_paragraph", widget: "text"}
+              - {label: "Every Journey Paragraph 1", name: "journey_paragraph_1", widget: "text"}
+              - {label: "Every Journey Paragraph 2", name: "journey_paragraph_2", widget: "text"}
+              - {label: "Every Journey Paragraph 3", name: "journey_paragraph_3", widget: "text"}
+              - {label: "First Instructor Photo", name: "instructor_photo_1", widget: "image"}
+              - {label: "Second Instructor Photo", name: "instructor_photo_2", widget: "image"}
+          - label: "Classes and Calendar"
+            name: "classes"
+            widget: "object"
+            fields:
+              - {label: "Calendar Heading", name: "schedule_heading", widget: "string"}
+              - {label: "Online Defensive Driving Notice (leave blank to hide)", name: "online_course_notice", widget: "text", required: false}
+              - label: "Class Times"
+                name: "class_times"
+                widget: "list"
+                fields:
+                  - {label: "Class Name", name: "title", widget: "string"}
+                  - {label: "Time", name: "time", widget: "string"}
+              - label: "Available Class Dates"
+                name: "dates"
+                widget: "list"
+                summary: "{{fields.date}} — {{fields.session}} — {{fields.status}}"
+                fields:
+                  - {label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD"}
+                  - {label: "Session", name: "session", widget: "select", options: ["Morning", "Evening"]}
+                  - {label: "Status", name: "status", widget: "select", options: ["Available", "Full", "Call Office"]}
+          - label: "Student Success"
+            name: "student_success"
+            widget: "object"
+            fields:
+              - {label: "Intro Paragraph", name: "intro", widget: "text"}
+              - label: "Student Photos"
+                name: "photos"
+                widget: "list"
+                summary: "{{fields.caption}}"
+                fields:
+                  - {label: "Photo", name: "image", widget: "image"}
+                  - {label: "Caption", name: "caption", widget: "string", default: "Hall's Driving Student Success"}

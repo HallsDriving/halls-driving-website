@@ -1,0 +1,5 @@
+V6.2 update:
+- Increased font sizes across the entire website for easier reading.
+- Applied the change to screen display only so the one-page permission-slip print layout remains compact.
+- Home page remains index.html and opens first when live.
+- Existing editable photo, calendar, announcement, and selected text options remain included.

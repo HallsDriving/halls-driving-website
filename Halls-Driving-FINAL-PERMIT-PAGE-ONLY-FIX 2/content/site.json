@@ -1,0 +1,152 @@
+{
+  "home": {
+    "announcement": "",
+    "welcome_text": "Since 1997, we've had the privilege of helping drivers build the knowledge, confidence, and skills they need for a lifetime of safe driving. Whether you're taking your first Driver Education course or completing Defensive Driving, we truly appreciate the opportunity to be part of your journey.",
+    "hero_photo": "/assets/hero-approved-black-sign-final-v64.jpg",
+    "about_photo": "/assets/storefront-original.jpg"
+  },
+  "about": {
+    "first_paragraph": "Since 1997, Hall's Driving has proudly served Gadsden and the surrounding communities with trusted driver education for teens and adults. Through clear guidance, practical experience, and patient support, we help each student build the skills and confidence needed to become a safe, responsible driver.",
+    "journey_paragraph_1": "At Hall's Driving, we understand that every student's journey is unique. Some are learning to drive for the very first time, others are building confidence behind the wheel, and some are completing a Defensive Driving Course.",
+    "journey_paragraph_2": "No matter where your journey begins, we're honored to be a part of it. Our goal is to provide the knowledge, encouragement, and skills needed to help every student become a safe, confident, and responsible driver for years to come.",
+    "journey_paragraph_3": "We believe learning to drive is more than earning a certificate or passing a test\u2014it's about building confidence, making good decisions, and developing habits that last a lifetime.",
+    "instructor_photo_1": "/assets/bud-original-clean.jpg",
+    "instructor_photo_2": "/assets/terry-original-clean.jpg"
+  },
+  "classes": {
+    "schedule_heading": "2026 AVAILABLE CLASS DATES",
+    "class_times": [
+      {
+        "title": "Tuesday Evening",
+        "time": "4:30 PM\u20138:30 PM"
+      },
+      {
+        "title": "Wednesday Morning",
+        "time": "9:30 AM\u20131:30 PM"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2026-07-07",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-07-08",
+        "session": "Morning",
+        "status": "Available"
+      },
+      {
+        "date": "2026-07-21",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-08-04",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-08-05",
+        "session": "Morning",
+        "status": "Available"
+      },
+      {
+        "date": "2026-08-18",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-09-01",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-09-02",
+        "session": "Morning",
+        "status": "Available"
+      },
+      {
+        "date": "2026-09-15",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-09-29",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-10-13",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-10-14",
+        "session": "Morning",
+        "status": "Available"
+      },
+      {
+        "date": "2026-10-27",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-11-03",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-11-04",
+        "session": "Morning",
+        "status": "Available"
+      },
+      {
+        "date": "2026-11-17",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-12-01",
+        "session": "Evening",
+        "status": "Available"
+      },
+      {
+        "date": "2026-12-02",
+        "session": "Morning",
+        "status": "Available"
+      },
+      {
+        "date": "2026-12-15",
+        "session": "Evening",
+        "status": "Available"
+      }
+    ],
+    "online_course_notice": "Online defensive driving courses are coming soon. Please check back for updates or contact Hall's Driving for more information."
+  },
+  "student_success": {
+    "intro": "We are proud of every student who completes a program at Hall's Driving. Each achievement reflects dedication, progress, and growing confidence behind the wheel.",
+    "photos": [
+      {
+        "image": "/assets/student-1.jpeg",
+        "caption": "Hall's Driving Student Success"
+      },
+      {
+        "image": "/assets/student-2.jpeg",
+        "caption": "Hall's Driving Student Success"
+      },
+      {
+        "image": "/assets/student-3.jpeg",
+        "caption": "Hall's Driving Student Success"
+      },
+      {
+        "image": "/assets/student-4.jpeg",
+        "caption": "Hall's Driving Student Success"
+      },
+      {
+        "image": "/assets/student-5.jpeg",
+        "caption": "Hall's Driving Student Success"
+      }
+    ]
+  }
+}

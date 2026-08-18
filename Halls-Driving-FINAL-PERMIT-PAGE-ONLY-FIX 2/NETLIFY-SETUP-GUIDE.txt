@@ -1,0 +1,29 @@
+HALL'S DRIVING — SIMPLE EDITOR SETUP
+
+This package keeps the approved design and adds an editor at /admin/.
+
+WHAT OWNERS CAN EDIT
+- Home-page announcement
+- About-page first paragraph
+- Class names and times
+- Available calendar dates
+- Student Success intro and photos
+
+The navigation, colors, logo, layout, and page structure are not available in the editor.
+
+SETUP OVERVIEW
+1. Create a free GitHub account and a private repository.
+2. Upload every file in this folder to the repository's main branch.
+3. Create a Netlify account and import that GitHub repository.
+4. In Netlify, enable Identity and set registration to Invite only.
+5. Enable Git Gateway.
+6. Invite the owners by email.
+7. Connect HallsDrivingAL.com in Netlify's Domain management.
+8. Update the GoDaddy DNS records exactly as Netlify displays them.
+9. Owners sign in at https://HallsDrivingAL.com/admin/.
+
+IMPORTANT
+- Do not delete content/site.json, admin/index.html, or admin/config.yml.
+- Uploaded student photos are saved in assets/uploads/.
+- Keep photo permission records before publishing student photos.
+- Netlify/GitHub account setup and domain DNS changes must be completed online; they cannot be preconfigured inside this ZIP.
