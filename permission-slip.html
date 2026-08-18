@@ -12,10 +12,10 @@
 .permission-form .line{border-bottom:1px solid #888;min-height:32px;margin:8px 0 20px}
 .permission-form .choice{margin:14px 0;font-size:1.05rem}
 .permission-form .notice{background:var(--cream);border-left:5px solid var(--gold);padding:16px;margin:22px 0}
-.print-btn{margin-right:10px}
+.permission-fields{display:grid;grid-template-columns:1fr 1fr;gap:18px 22px;margin:18px 0}.permission-fields label{display:flex;flex-direction:column;gap:8px}.permission-fields input{width:100%;padding:13px 12px;border:1px solid #aaa;border-radius:6px;font:inherit;background:white}.choice{display:block}.choice input{margin-right:8px;transform:scale(1.15)}.permission-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}.permission-actions .btn{margin:0}.submit-btn{background:var(--red)}.print-btn{background:var(--gold);color:#111}@media(max-width:640px){.permission-form{padding:22px 18px}.permission-fields{grid-template-columns:1fr}.permission-actions{flex-direction:column}.permission-actions .btn{width:100%;text-align:center}.permission-form h2{font-size:1.5rem}}
 @page{size:Letter portrait;margin:.35in}
 @media print{
-  header,.footer,.page-head,.print-btn,.back-btn{display:none!important}
+  header,.footer,.page-head,.permission-actions{display:none!important}
   html,body{background:white!important;margin:0!important;padding:0!important;font-size:10.5pt;line-height:1.25}
   .section{padding:0!important}
   .wrap{width:100%!important;max-width:none!important;margin:0!important}
@@ -35,25 +35,38 @@
 <nav id="site-navigation"><a href="index.html">HOME</a><a href="about.html">ABOUT US</a><a href="defensive-driving.html">CLASSES &amp; SERVICES</a><a href="parents.html">PERMIT &amp; LICENSE INFO</a><a class="active" href="permission-slip.html">PARENT/STUDENT PERMISSION FORM</a><a href="student-success.html">STUDENT SUCCESS</a><a href="contact.html">CONTACT</a></nav></div></header>
 <section class="page-head"><div class="wrap"><h1>Website Photo Permission Slip</h1><p>Student and parent/legal guardian authorization</p></div></section>
 <section class="section"><div class="wrap">
-<form class="permission-form">
+<form action="https://formsubmit.co/Halls.driving@gmail.com" class="permission-form" method="POST" name="photo-permission-form">
+<input autocomplete="off" name="_honey" style="display:none" tabindex="-1" type="text"/>
+<input name="_subject" type="hidden" value="New Hall's Driving Photo Permission Form"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://hallsdrivingal.com/permission-thank-you.html"/>
+<input name="_url" type="hidden" value="https://hallsdrivingal.com/permission-slip.html"/>
+<input name="_autoresponse" type="hidden" value="Thank you. Hall's Driving received your photo and website permission form. We appreciate you taking the time to complete it. — The Hall's Driving Family"/>
 <img alt="Hall's Driving logo" class="permission-logo" src="assets/halls-driving-logo.png"/>
 <h2>Hall's Driving Photo and Website Permission</h2>
 <p>This form gives Hall's Driving permission to use a student's original photograph on the Hall's Driving website, Student Success page, and related Hall's Driving promotional materials.</p>
-<label><strong>Student's full name</strong></label><div class="line"></div>
-<label><strong>Parent/legal guardian's full name</strong></label><div class="line"></div>
-<label><strong>Phone number</strong></label><div class="line"></div>
-<label><strong>Email address</strong></label><div class="line"></div>
+<div class="permission-fields">
+<label><strong>Student's full name</strong><input name="studentName" required type="text" autocomplete="name"/></label>
+<label><strong>Parent/legal guardian's full name</strong><input name="guardianName" required type="text" autocomplete="name"/></label>
+<label><strong>Phone number</strong><input name="phone" required type="tel" autocomplete="tel"/></label>
+<label><strong>Email address</strong><input name="email" required type="email" autocomplete="email"/></label>
+</div>
 <div class="notice">
 <strong>Please choose one:</strong>
-<div class="choice">☐ I give permission for the student's photograph to be featured on the Hall's Driving website and related Hall's Driving materials.</div>
-<div class="choice">☐ I do not give permission for the student's photograph to be featured.</div>
+<label class="choice"><input name="photoPermission" required type="radio" value="Permission granted"/> I give permission for the student's photograph to be featured on the Hall's Driving website and related Hall's Driving materials.</label>
+<label class="choice"><input name="photoPermission" required type="radio" value="Permission not granted"/> I do not give permission for the student's photograph to be featured.</label>
 </div>
 <p>I understand that no private contact information will be posted with the photograph. I may contact Hall's Driving to request removal of the photograph from the website.</p>
-<label><strong>Parent/legal guardian signature</strong></label><div class="line"></div>
-<label><strong>Date</strong></label><div class="line"></div>
-<label><strong>Student signature, when applicable</strong></label><div class="line"></div>
-<button class="btn print-btn" onclick="window.print()" type="button">Print Permission Slip</button>
+<div class="permission-fields">
+<label><strong>Parent/legal guardian electronic signature</strong><input name="guardianSignature" required type="text"/></label>
+<label><strong>Date</strong><input name="date" required type="date"/></label>
+<label><strong>Student electronic signature, when applicable</strong><input name="studentSignature" type="text"/></label>
+</div>
+<div class="permission-actions">
+<button class="btn submit-btn" type="submit">Submit Permission Form</button>
+<button class="btn print-btn" onclick="window.print()" type="button">Print Form</button>
 <a class="btn back-btn" href="index.html">Return to Home</a>
+</div>
 </form>
 </div></section>
 <footer class="footer"><div class="wrap footer-grid">

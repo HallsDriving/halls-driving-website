@@ -1,0 +1,7 @@
+HALL'S DRIVING FINAL v3 — HOME IMAGE UPDATE
+
+- Replaced only the Home-page car/driver hero photo with the exact user-provided image.
+- No image editing, AI generation, retouching, or person alteration was performed in this package.
+- Home remains index.html at the repository root.
+- Root routing files continue to point / to /index.html.
+- All other approved pages, forms, styles, content, and functionality are unchanged from FINAL COMPLETE NO-AI v2.
