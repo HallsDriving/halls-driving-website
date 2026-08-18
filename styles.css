@@ -415,3 +415,23 @@ button:disabled{opacity:.7;cursor:wait}
   align-items:center !important;
   justify-content:center !important;
 }
+
+
+/* FINAL MOBILE HOME LOGO ONLY
+   Do not alter the approved mobile navigation/tab layout. */
+@media (max-width:850px){
+  .home-page header .brand{
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    width:100% !important;
+    margin:0 auto 8px !important;
+  }
+  .home-page header .brand img{
+    display:block !important;
+    width:112px !important;
+    height:auto !important;
+    margin:0 auto !important;
+    object-fit:contain !important;
+  }
+}

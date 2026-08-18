@@ -1,0 +1,6 @@
+FINAL PHOTO-ONLY FIX
+- No desktop layout changes.
+- No mobile layout/navigation changes.
+- No form/content/routing changes.
+- Home page now uses the verified approved lighter photo with black/red Student Driver signage.
+- A brand-new image filename is used to prevent browsers from reusing the old yellow-sign photo from cache.
