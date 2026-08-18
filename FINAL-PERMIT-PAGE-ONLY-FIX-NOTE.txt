@@ -1,0 +1,4 @@
+Permit & License page only:
+- Forces a fresh load of parents.html to avoid the older cached mobile page.
+- Normalizes its mobile navigation to the same current tab/grid treatment.
+- No Home photo, desktop layout, forms, content, or other pages changed.
