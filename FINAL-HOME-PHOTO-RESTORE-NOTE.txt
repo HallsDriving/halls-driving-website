@@ -1,0 +1,5 @@
+Home photo restore:
+- Restores the approved lighter Home photo on desktop and mobile.
+- Uses the existing stable asset path assets/hero-clean-original.jpg.
+- Keeps the latest HOME/navigation correction intact.
+- No other content, forms, email routing, or layout was changed.

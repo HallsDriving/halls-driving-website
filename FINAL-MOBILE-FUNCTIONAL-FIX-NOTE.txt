@@ -1,0 +1,8 @@
+FINAL MOBILE FUNCTIONAL FIX
+- Desktop design remains unchanged.
+- Mobile keeps the approved two-column tab menu style, now collapsed behind a MENU button so it does not cover the page.
+- Hall's Driving logo is visible in the mobile header on every page, including Home.
+- Menu closes after a page is selected.
+- Permission Form has HOME in the same functional navigation.
+- Home uses assets/hero-final-black-sign-lighter.jpg.
+- content/site.json now points to the same approved lighter hero so the old hero cannot be restored by content data later.
