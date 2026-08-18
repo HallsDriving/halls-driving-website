@@ -491,3 +491,27 @@ button:disabled{opacity:.7;cursor:wait}
     grid-column:1/-1 !important;
   }
 }
+
+
+/* FINAL FOOTER VIEW TOGGLE
+   Keeps View Desktop / Return to Mobile in the footer, out of the way. */
+.view-mode-row{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  margin-top:18px !important;
+  padding:0 12px 14px !important;
+}
+
+#view-mode-toggle{
+  position:static !important;
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:180px !important;
+  max-width:100% !important;
+  padding:10px 16px !important;
+  border-radius:8px !important;
+  box-shadow:none !important;
+  margin:0 auto !important;
+}

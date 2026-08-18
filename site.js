@@ -11,6 +11,25 @@ document.addEventListener('DOMContentLoaded', function () {
       meta.setAttribute('content', forcedDesktop ? 'width=1180' : 'width=device-width,initial-scale=1');
       button.textContent = forcedDesktop ? 'Return to Mobile View' : 'View Desktop Site';
       button.classList.toggle('is-desktop-mode', forcedDesktop);
+
+      // Keep the return control easy to reach when a phone is forcing desktop view.
+      if (forcedDesktop) {
+        button.style.position = 'fixed';
+        button.style.right = '16px';
+        button.style.bottom = '16px';
+        button.style.zIndex = '99999';
+        button.style.padding = '12px 16px';
+        button.style.borderRadius = '8px';
+        button.style.boxShadow = '0 4px 14px rgba(0,0,0,.35)';
+      } else {
+        button.style.position = '';
+        button.style.right = '';
+        button.style.bottom = '';
+        button.style.zIndex = '';
+        button.style.padding = '';
+        button.style.borderRadius = '';
+        button.style.boxShadow = '';
+      }
     }
     applyMode();
     button.addEventListener('click', function(){

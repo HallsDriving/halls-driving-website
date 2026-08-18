@@ -1,0 +1,5 @@
+FINAL SMALL FIXES ONLY
+- Student Success image paths changed from /assets/... to assets/... for GitHub Pages compatibility.
+- View Desktop Site / Return to Mobile View remains the same control, but now stays in the footer instead of floating over the page.
+- No desktop layout, mobile navigation, Home photo, forms, wording, or routing changed.
+- Photo files present: yes

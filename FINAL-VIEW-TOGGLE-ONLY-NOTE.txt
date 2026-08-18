@@ -1,0 +1,4 @@
+ONLY CHANGE IN THIS BUILD:
+- When a phone is in forced Desktop View, the existing 'Return to Mobile View' button stays fixed at the lower-right so it is always reachable.
+- The existing 'View Desktop Site' behavior remains unchanged in normal mobile view.
+- No layout, navigation, photos, forms, wording, routing, or Student Success content was changed.

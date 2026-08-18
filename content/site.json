@@ -128,23 +128,23 @@
     "intro": "We are proud of every student who completes a program at Hall's Driving. Each achievement reflects dedication, progress, and growing confidence behind the wheel.",
     "photos": [
       {
-        "image": "/assets/student-1.jpeg",
+        "image": "assets/student-1.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "/assets/student-2.jpeg",
+        "image": "assets/student-2.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "/assets/student-3.jpeg",
+        "image": "assets/student-3.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "/assets/student-4.jpeg",
+        "image": "assets/student-4.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "/assets/student-5.jpeg",
+        "image": "assets/student-5.jpeg",
         "caption": "Hall's Driving Student Success"
       }
     ]
