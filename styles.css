@@ -274,3 +274,94 @@ button:disabled{opacity:.7;cursor:wait}
   .view-mode-row{display:none}
   .view-mode-toggle.is-desktop-mode{display:inline-block}
 }
+
+
+/* Mobile thank-you fit fix — applies ONLY to registration/permission confirmation pages. */
+@media(max-width:850px){
+  body.compact-thankyou header{position:static!important}
+  body.compact-thankyou .wrap.nav{
+    width:100%!important;
+    padding:5px 3% 7px!important;
+  }
+  body.compact-thankyou .brand{
+    margin:0 auto 3px!important;
+  }
+  body.compact-thankyou .brand img{
+    width:84px!important;
+    height:auto!important;
+    margin:0!important;
+  }
+  body.compact-thankyou nav#site-navigation a{
+    min-height:40px!important;
+    padding:6px 5px!important;
+    font-size:.72rem!important;
+    line-height:1.1!important;
+  }
+  body.compact-thankyou .page-head{
+    padding:17px 0!important;
+  }
+  body.compact-thankyou .page-head h1{
+    font-size:1.7rem!important;
+    line-height:1!important;
+  }
+  body.compact-thankyou .section{
+    padding:18px 0 22px!important;
+  }
+  body.compact-thankyou .thank-you-card{
+    width:min(94%,560px)!important;
+    padding:16px 14px!important;
+    border-radius:8px!important;
+  }
+  body.compact-thankyou .thank-you-card img{
+    width:86px!important;
+    margin:0 auto 7px!important;
+  }
+  body.compact-thankyou .thank-you-card h2{
+    font-size:1.55rem!important;
+    line-height:1.05!important;
+    margin:0 0 7px!important;
+  }
+  body.compact-thankyou .thank-you-card p{
+    font-size:.91rem!important;
+    line-height:1.34!important;
+    margin:0 0 12px!important;
+  }
+  body.compact-thankyou .thank-you-card .btn{
+    padding:10px 16px!important;
+    font-size:.86rem!important;
+  }
+}
+@media(max-width:520px){
+  body.compact-thankyou .brand img{width:78px!important}
+  body.compact-thankyou nav#site-navigation a{
+    min-height:38px!important;
+    font-size:.69rem!important;
+    padding:5px 4px!important;
+  }
+  body.compact-thankyou .page-head{padding:14px 0!important}
+  body.compact-thankyou .page-head h1{font-size:1.55rem!important}
+  body.compact-thankyou .section{padding:14px 0 18px!important}
+  body.compact-thankyou .thank-you-card{padding:14px 12px!important}
+  body.compact-thankyou .thank-you-card img{width:80px!important}
+  body.compact-thankyou .thank-you-card h2{font-size:1.45rem!important}
+  body.compact-thankyou .thank-you-card p{font-size:.88rem!important}
+}
+
+/* Small home-logo refinement: still prominent, just slightly less oversized on phones. */
+@media(max-width:850px){
+  .home-hero-logo{width:min(238px,64vw)!important}
+}
+
+
+/* MOBILE HEADER SCROLL FIX
+   On phones/tablets the full navigation header scrolls away with the page.
+   This prevents page content from disappearing underneath the large mobile header.
+   Desktop behavior is unchanged. */
+@media(max-width:850px){
+  header,
+  .home-page header,
+  body.compact-thankyou header{
+    position:static !important;
+    top:auto !important;
+  }
+}
