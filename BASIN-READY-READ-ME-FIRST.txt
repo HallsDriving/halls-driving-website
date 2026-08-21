@@ -1,0 +1,24 @@
+HALL'S DRIVING — BASIN READY PACKAGE
+
+This package preserves the currently approved live website layout and changes ONLY
+the backend destination for the three forms:
+
+Contact:
+https://usebasin.com/f/3347333f3f80
+
+Defensive Driving Registration:
+https://usebasin.com/f/e94297fc64c7
+
+Parent/Student Permission:
+https://usebasin.com/f/6e4779168ff9
+
+BasinJS is included so successful submissions return visitors to the existing
+Hall's Driving thank-you pages instead of Basin's default page.
+
+IMPORTANT:
+DO NOT upload this package to GitHub until Basin notification/autoresponse settings
+for Registration and Permission have been configured and tested. The currently
+live FormSubmit forms should remain in place until then.
+
+No Home-page, desktop, mobile, navigation, photo, wording, domain, or Google
+Business Profile changes were made in this package.
