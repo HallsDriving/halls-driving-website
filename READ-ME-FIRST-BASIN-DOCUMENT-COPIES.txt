@@ -1,0 +1,8 @@
+HALL'S DRIVING FINAL BASIN + DOCUMENT COPY BUILD
+
+Home remains index.html at the ZIP root.
+All three forms now point to the verified Basin endpoints.
+Permission and Defensive Driving thank-you pages render the submitted answers as clean, printable completed documents with a Print / Save Copy button.
+Contact continues to use the normal contact thank-you page.
+
+IMPORTANT: Test all three after upload. The completed copy is generated in the visitor's browser from the values they just submitted; it is not an emailed PDF attachment. Owner email formatting remains controlled by Basin notification/template settings.

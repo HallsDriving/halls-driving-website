@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 
 <html><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>Contact | Hall's Driving</title><link href="styles.css" rel="stylesheet"/>
-<link href="assets/halls-driving-logo.png" rel="icon" type="image/png"/>
-<link href="assets/halls-driving-logo.png" rel="apple-touch-icon"/>
+<link rel="icon" type="image/png" href="assets/halls-driving-logo.png">
+<link rel="apple-touch-icon" href="assets/halls-driving-logo.png">
 </head><body class="">
 <header><div class="wrap nav"><a aria-label="Hall's Driving home" class="brand" href="index.html"><img alt="Hall's Driving logo" src="assets/halls-driving-logo.png"/></a>
-<nav id="site-navigation"><a href="index.html">HOME</a><a href="about.html">ABOUT US</a><a href="defensive-driving.html">CLASSES &amp; SERVICES</a><a href="parents.html?v=final-permit-2">PERMIT &amp; LICENSE INFO</a><a href="permission-slip.html">PARENT/STUDENT PERMISSION FORM</a><a href="student-success.html">STUDENT SUCCESS</a><a class="active" href="contact.html">CONTACT</a></nav></div></header>
+<nav id="site-navigation"><a href="index.html">HOME</a><a href="about.html">ABOUT US</a><a href="defensive-driving.html">CLASSES &amp; SERVICES</a><a href="parents.html">PERMIT &amp; LICENSE INFO</a><a href="permission-slip.html">PARENT/STUDENT PERMISSION FORM</a><a href="student-success.html">STUDENT SUCCESS</a><a class="active" href="contact.html">CONTACT</a></nav></div></header>
 <section class="page-head"><div class="wrap"><h1>Contact</h1></div></section>
 <section class="section"><div class="wrap contact-grid"><div><h2>Contact Hall's Driving</h2><p><strong>Address:</strong> 212 Wall St., Gadsden, AL</p><p><strong>Office:</strong> (256) 543-3738</p><p><strong>Mobile:</strong> (256) 328-6540</p><p><strong>Email:</strong> Halls.driving@gmail.com</p><p><strong>Office Hours:</strong> Monday–Friday, 9:00 AM–4:00 PM</p></div>
 <div class="panel"><div class="panel-head">REQUEST INFORMATION</div><div class="panel-body">
-<form action="https://usebasin.com/f/3347333f3f80" class="form-grid" data-basin-error-id="contact-form-error" data-basin-form="" data-basin-spam-protection="none" data-basin-success-action="render" data-basin-success-id="contact-form-success" id="contact-form" method="POST" name="contact-request">
-<div class="field"><label for="contact-name">Name</label><input autocomplete="name" id="contact-name" name="firstName" required="" type="text"/></div>
+<form data-basin-form="" action="https://usebasin.com/f/3347333f3f80" class="form-grid" id="contact-form" method="POST" name="contact-request"><div class="field"><label for="contact-name">Name</label><input autocomplete="name" id="contact-name" name="firstName" required="" type="text"/></div>
 <div class="field"><label for="contact-phone">Phone</label><input autocomplete="tel" id="contact-phone" name="phone" type="tel"/></div>
 <div class="field full"><label for="contact-email">Email</label><input autocomplete="email" id="contact-email" name="email" required="" type="email"/></div>
 <div class="field full"><label for="contact-message">How may we help?</label><textarea id="contact-message" name="message" required="" rows="5"></textarea></div>
 <div class="full"><button class="btn" type="submit">Send Request</button></div>
-</form><div id="contact-form-success" style="display:none">Thank you. Your submission was received.</div><div id="contact-form-error" style="display:none">We could not submit the form. Please try again or contact Hall's Driving.</div>
+</form>
+
 </div></div></div></section>
 <footer class="footer"><div class="wrap footer-grid">
 <div><h3>Find Us</h3><p>212 Wall St.<br/>Gadsden, AL</p>
@@ -26,10 +26,16 @@
 <div><h3>Follow Us</h3><p><a class="facebook" href="https://www.facebook.com/" rel="noopener" target="_blank">Like us on Facebook</a></p>
 <h3>Website</h3><p>HallsDrivingAL.com<br/>Cash &amp; Credit accepted</p></div>
 </div><div class="view-mode-row"><button class="view-mode-toggle" id="view-mode-toggle" type="button">View Desktop Site</button></div><div class="copyright">© Hall's Driving. All rights reserved. <span class="footer-tagline">Building Safe, Confident Drivers Since 1997.</span></div></footer>
-<script src="site.js"></script><script defer="" src="https://js.usebasin.com/v2.11.1.min.js"></script><script>
-document.addEventListener('basinjsFormSuccess', function(event) {
-  if (event.detail && event.detail.form && event.detail.form.id === 'contact-form') {
-    window.location.href = 'contact-thank-you.html';
-  }
+<script src="site.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+ const f=document.querySelector('form'); if(!f)return;
+ f.addEventListener('submit',function(){
+  const d={}; new FormData(f).forEach((v,k)=>{if(d[k]) d[k]+=', '+v; else d[k]=v;});
+  sessionStorage.setItem('halls-contact',JSON.stringify(d));
+ });
 });
-</script></body></html>
+</script>
+<script src="https://js.usebasin.com/v2.11.1.min.js" defer></script>
+<script>document.addEventListener('basinjsFormSuccess',function(e){window.location.href='contact-thank-you.html';});</script>
+</body></html>

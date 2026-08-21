@@ -2,7 +2,7 @@
   "home": {
     "announcement": "",
     "welcome_text": "Since 1997, we've had the privilege of helping drivers build the knowledge, confidence, and skills they need for a lifetime of safe driving. Whether you're taking your first Driver Education course or completing Defensive Driving, we truly appreciate the opportunity to be part of your journey.",
-    "hero_photo": "/assets/hero-approved-black-sign-final-v64.jpg",
+    "hero_photo": "/assets/hero-clean-original.jpg",
     "about_photo": "/assets/storefront-original.jpg"
   },
   "about": {
@@ -128,23 +128,23 @@
     "intro": "We are proud of every student who completes a program at Hall's Driving. Each achievement reflects dedication, progress, and growing confidence behind the wheel.",
     "photos": [
       {
-        "image": "assets/student-1.jpeg",
+        "image": "/assets/student-1.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "assets/student-2.jpeg",
+        "image": "/assets/student-2.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "assets/student-3.jpeg",
+        "image": "/assets/student-3.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "assets/student-4.jpeg",
+        "image": "/assets/student-4.jpeg",
         "caption": "Hall's Driving Student Success"
       },
       {
-        "image": "assets/student-5.jpeg",
+        "image": "/assets/student-5.jpeg",
         "caption": "Hall's Driving Student Success"
       }
     ]

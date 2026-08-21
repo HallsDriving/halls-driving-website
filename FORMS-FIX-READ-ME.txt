@@ -1,0 +1,14 @@
+HALL'S DRIVING FORMS FIX
+
+This build changes ONLY:
+1. Restores the Defensive Driving and Permission thank-you pages to the previous approved website look.
+2. Adds a generated PDF copy of the completed Defensive Driving registration to the Basin submission.
+3. Adds a generated PDF copy of the completed Parent/Student permission form to the Basin submission.
+4. Makes the Home hero logo slightly smaller on phones only (still intentionally prominent).
+
+Everything else remains unchanged.
+
+IMPORTANT BASIN SETTING:
+To receive the generated PDFs as actual email attachments instead of links, set Attachment Settings for BOTH the Defensive Driving and Permission forms to:
+"Attach Files Directly to Emails"
+Then save changes.

@@ -11,25 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
       meta.setAttribute('content', forcedDesktop ? 'width=1180' : 'width=device-width,initial-scale=1');
       button.textContent = forcedDesktop ? 'Return to Mobile View' : 'View Desktop Site';
       button.classList.toggle('is-desktop-mode', forcedDesktop);
-
-      // Keep the return control easy to reach when a phone is forcing desktop view.
-      if (forcedDesktop) {
-        button.style.position = 'fixed';
-        button.style.right = '16px';
-        button.style.bottom = '16px';
-        button.style.zIndex = '99999';
-        button.style.padding = '12px 16px';
-        button.style.borderRadius = '8px';
-        button.style.boxShadow = '0 4px 14px rgba(0,0,0,.35)';
-      } else {
-        button.style.position = '';
-        button.style.right = '';
-        button.style.bottom = '';
-        button.style.zIndex = '';
-        button.style.padding = '';
-        button.style.borderRadius = '';
-        button.style.boxShadow = '';
-      }
     }
     applyMode();
     button.addEventListener('click', function(){
@@ -147,38 +128,4 @@ document.addEventListener('DOMContentLoaded', function () {
     var month = Number(panel.getAttribute('data-month'));
     if (today >= new Date(year, month, 1)) panel.hidden = true;
   });
-});
-
-/* Final functional mobile navigation. Desktop navigation is untouched. */
-document.addEventListener('DOMContentLoaded', function () {
-  var nav = document.getElementById('site-navigation');
-  if (!nav) return;
-  var navWrap = nav.closest('.nav');
-  if (!navWrap) return;
-  var button = navWrap.querySelector('.menu-toggle');
-  if (!button) {
-    button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'menu-toggle';
-    button.setAttribute('aria-controls', 'site-navigation');
-    button.setAttribute('aria-expanded', 'false');
-    button.setAttribute('aria-label', 'Open site menu');
-    button.innerHTML = '<span class="menu-label">MENU</span>';
-    navWrap.insertBefore(button, nav);
-  }
-  function closeMenu(){
-    nav.classList.remove('open');
-    button.setAttribute('aria-expanded','false');
-    button.setAttribute('aria-label','Open site menu');
-    var label=button.querySelector('.menu-label'); if(label) label.textContent='MENU';
-  }
-  button.addEventListener('click', function(){
-    var opening=!nav.classList.contains('open');
-    nav.classList.toggle('open', opening);
-    button.setAttribute('aria-expanded', opening ? 'true':'false');
-    button.setAttribute('aria-label', opening ? 'Close site menu':'Open site menu');
-    var label=button.querySelector('.menu-label'); if(label) label.textContent=opening?'CLOSE':'MENU';
-  });
-  nav.querySelectorAll('a').forEach(function(link){link.addEventListener('click',closeMenu)});
-  window.addEventListener('resize',function(){if(window.innerWidth>850) closeMenu()});
 });
