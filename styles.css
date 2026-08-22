@@ -365,3 +365,16 @@ button:disabled{opacity:.7;cursor:wait}
     top:auto !important;
   }
 }
+
+
+/* VIEW TOGGLE FIX
+   When a phone is intentionally switched to the site's desktop layout,
+   keep the footer control visible so the visitor can return to mobile view. */
+body.forced-desktop-mode .view-mode-row{
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+}
+body.forced-desktop-mode .view-mode-toggle{
+  display:inline-block !important;
+}

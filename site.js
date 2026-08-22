@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function applyMode(){
       forcedDesktop = localStorage.getItem('hallsViewMode') === 'desktop';
       meta.setAttribute('content', forcedDesktop ? 'width=1180' : 'width=device-width,initial-scale=1');
+      document.body.classList.toggle('forced-desktop-mode', forcedDesktop);
       button.textContent = forcedDesktop ? 'Return to Mobile View' : 'View Desktop Site';
       button.classList.toggle('is-desktop-mode', forcedDesktop);
     }
